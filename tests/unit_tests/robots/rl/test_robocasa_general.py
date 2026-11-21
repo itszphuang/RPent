@@ -621,6 +621,23 @@ def _make_fake_facade(*, with_counter: bool, with_floor: bool = True):
     return facade
 
 
+def test_floor_fallback_ignores_toaster_slot_collision_box():
+    facade = _make_fake_facade(with_counter=False)
+    sim = facade.env.sim
+    # CloseBlenderLid seed 1 has toaster slot bottoms above the room floor.
+    sim.model.geom_id2name = [
+        "toaster_main_group_slotR_floor",
+        "pad",
+        "floor_room_g0",
+    ].__getitem__
+    sim.model.geom_type[0] = 6
+    sim.model.geom_contype[0] = 1
+    sim.data.geom_xpos[0, 2] = 1.026
+    kind, point, source = facade._support_surface()
+    assert (kind, source) == ("floor", "floor_room_g0")
+    assert point[2] == pytest.approx(0)
+
+
 def test_facade_calibration_supports_counter_and_floor_fallback():
     from robots.rl.coordinates import Coordinates
 
@@ -851,11 +868,21 @@ def test_raw_depth_endpoints_filtered_before_back_projection(
     env.depth_near, env.depth_far = 0.001, 50.0
     raw = np.full((8, 8), 0.9, dtype=np.float32)
     raw[-1, :6] = [1.0, np.nan, np.inf, -np.inf, 0.0, 1.01]
+    raw[-1, 6:] = np.float32(0.9999914765357971)  # native EGL skybox depth
+    ids = np.full((8, 8, 2), [5, 252], dtype=np.int32)
+    ids[-1, 6] = [-1, -1]  # adjacent geometry at the same depth remains valid
     if channel_dim:
         raw = raw[..., None]
     rgb = np.zeros((8, 8, 3), dtype=np.uint8)
     facade = object.__new__(RoboCasaEnvFacade)
-    facade.env = SimpleNamespace(sim=SimpleNamespace(render=lambda **kw: (rgb, raw)))
+
+    def render(*, width, height, camera_name, depth=False, segmentation=False):
+        if segmentation:
+            return ids
+        assert depth
+        return rgb, raw
+
+    facade.env = SimpleNamespace(sim=SimpleNamespace(render=render))
     camera_utils = ModuleType("robosuite.utils.camera_utils")
 
     def real_depth(sim, buffer):
@@ -880,10 +907,11 @@ def test_raw_depth_endpoints_filtered_before_back_projection(
     assert legacy[0, 0] == pytest.approx(49.932194)
     tk, _ = _make_toolkit(tmp_path, env=env)
     world = tk.state.load("agentview_world.npz", step=0)
-    assert np.isnan(world[0, :6]).all()
-    assert np.isfinite(world[0, 6:]).all()
-    bad = tk.execute_tool("back_project", {"pixel": [0, 0], "step": 0})
-    assert "insufficient depth" in bad.data["error"]
+    assert np.isnan(world[0, :7]).all()
+    assert np.isfinite(world[0, 7]).all()
+    for col in (0, 6):
+        bad = tk.execute_tool("back_project", {"pixel": [0, col], "step": 0})
+        assert "insufficient depth" in bad.data["error"]
 
 
 @pytest.mark.parametrize(

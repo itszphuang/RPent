@@ -181,6 +181,14 @@ class RoboCasaEnvFacade(MainThreadServeMixin, BaseEnvFacade):
                 return self._support_surface_cache
 
         model, data = self.env.sim.model, self.env.sim.data
+        floor_geoms = set()
+        fixtures = getattr(self.env, "fixtures", {})
+        if fixtures:
+            from robocasa.models.fixtures.others import Floor
+
+            for fixture in fixtures.values():
+                if isinstance(fixture, Floor):
+                    floor_geoms.update(fixture.contact_geoms)
         floor_bodies: set[int] = set()
         arena = getattr(getattr(self.env, "model", None), "mujoco_arena", None)
         for field in ("floor_body", "floor"):
@@ -222,13 +230,14 @@ class RoboCasaEnvFacade(MainThreadServeMixin, BaseEnvFacade):
             geom_name = self._id_name(model, "geom", geom)
             body_name = self._id_name(model, "body", body_id)
             source = geom_name or body_name or f"geom_{geom}"
-            if (
-                body_id in floor_bodies
-                or "floor" in geom_name.lower()
-                or "floor" in body_name.lower()
-            ):
+            # Appliances also have collision parts named e.g. slotR_floor.
+            # Only use fixture-owned floors, arena floor bodies or world ground.
+            world_floor = body_id == 0 and (
+                geom_name.lower() == "floor" or geom_name.lower().startswith("floor_")
+            )
+            if geom_name in floor_geoms or body_id in floor_bodies or world_floor:
                 named_floor_surfaces.append((point, source))
-            elif geom_type == 0:
+            elif body_id == 0 and geom_type == 0:
                 plane_surfaces.append((point, source))
 
         if named_floor_surfaces:
@@ -386,7 +395,7 @@ class RoboCasaEnvFacade(MainThreadServeMixin, BaseEnvFacade):
         self, camera_name, height, width, depth, *, mask_invalid_depth=False
     ):
         """Return native RGB and optional metric depth. With mask_invalid_depth,
-        nonfinite and clipped OpenGL samples are returned as NaN in metric depth.
+        background, nonfinite and clipped samples are returned as NaN in metric depth.
         """
         import robosuite.utils.camera_utils as CU
 
@@ -400,6 +409,15 @@ class RoboCasaEnvFacade(MainThreadServeMixin, BaseEnvFacade):
             if mask_invalid_depth:
                 # A float32 far-plane sample can round below metric depth_far.
                 valid = np.isfinite(d) & (d > 0) & (d < 1)
+                # The rendered skybox also writes interior depth values. Its
+                # native object ID is -1 even when its metric depth is finite.
+                ids = self.env.sim.render(
+                    width=width,
+                    height=height,
+                    camera_name=camera_name,
+                    segmentation=True,
+                )
+                valid &= ids[..., 1] >= 0
             # Sanitize the raw OpenGL normalized depth into [0,1]: replace NaN/inf
             # (degenerate camera pose) then clip numerical overshoot. Otherwise an
             # assertion inside get_real_depth_map crashes the whole env server process.
