@@ -95,7 +95,7 @@ def _add_cli_args(parser: argparse.ArgumentParser, use_dashboard: bool) -> None:
     parser.add_argument(
         "--simulator",
         dest="env",
-        choices=("libero", "robocasa", "robotwin", "robodojo"),
+        choices=("libero", "robocasa", "robotwin", "robodojo", "metaworld"),
         default="libero",
     )
     parser.add_argument("--max-actions-per-call", type=int, default=3)
@@ -214,9 +214,15 @@ def _parse_config(args: argparse.Namespace) -> RunConfig:
     if environment == "libero" and args.task is None:
         raise ValueError("--task is required")
     if environment != "libero" and not args.task_name:
-        raise ValueError("--task-name is required for RoboCasa, RoboTwin and RoboDojo")
-    if environment != "libero" and not re.fullmatch(r"[A-Za-z0-9_]+", args.task_name):
-        raise ValueError("task names must contain only letters, digits and underscores")
+        raise ValueError(
+            "--task-name is required for RoboCasa, RoboTwin and MetaWorld or RoboDojo"
+        )
+    if environment != "libero" and not re.fullmatch(
+        r"[A-Za-z0-9_][A-Za-z0-9_-]*", args.task_name
+    ):
+        raise ValueError(
+            "task names must contain only letters, digits, hyphens and underscores"
+        )
     cell = (
         f"{args.suite}_t{args.task}"
         if environment == "libero"
@@ -343,6 +349,10 @@ def _start_env(
             "OPENBLAS_NUM_THREADS": "1",
             "PYTHONPATH": str(get_repo_root()),
         }
+        if environment == "metaworld":
+            # Launching robots/rl/server.py would otherwise shadow the upstream
+            # metaworld package with robots/rl/metaworld.py on sys.path[0].
+            overrides["PYTHONSAFEPATH"] = "1"
         if simulator_python:
             overrides["LD_LIBRARY_PATH"] = _simulator_library_path(simulator_python)
         camera_args = (
@@ -513,6 +523,12 @@ def _connect_env(args: argparse.Namespace, rpc) -> dict[str, Any]:
                 "seed": args.seed,
                 "max_episode_steps": args.max_episode_steps,
             },
+        )
+    elif environment == "metaworld":
+        from robots.metaworld.env_client import MetaWorldEnvClient
+
+        env = MetaWorldEnvClient(
+            rpc, expected_meta={"task_name": args.task_name, "seed": args.seed}
         )
     elif environment == "robodojo":
         from robots.robodojo.env_client import RoboDojoEnvClient

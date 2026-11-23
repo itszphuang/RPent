@@ -59,6 +59,7 @@ def source_digest() -> str:
         "robots/robocasa",
         "robots/robotwin",
         "robots/robodojo",
+        "robots/metaworld",
         "rpent/tools",
         "rpent/session",
         "rpent/utils/rpc",
