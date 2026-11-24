@@ -17,6 +17,7 @@
 from __future__ import annotations
 
 import asyncio
+import math
 import os
 import queue
 from abc import ABC, abstractmethod
@@ -275,16 +276,23 @@ def build_api_model(
 
         trace = RequestTrace(request_trace_dir)
 
+    read_timeout = os.environ.get("RPENT_HTTP_READ_TIMEOUT_S")
+
     def _provider_factory(provider_name: str):
         """Build the provider for ``provider_name``."""
-        if not base_url and trace is None and admission is None:
+        if (
+            not base_url
+            and trace is None
+            and admission is None
+            and read_timeout is None
+        ):
             return infer_provider(provider_name)
         provider_cls = infer_provider_class(provider_name)
         params = inspect.signature(provider_cls.__init__).parameters
         kwargs = {}
         if "base_url" in params:
             kwargs["base_url"] = base_url
-        if trace is not None or admission is not None:
+        if trace is not None or admission is not None or read_timeout is not None:
             import httpx
 
             if "http_client" not in params:
@@ -298,8 +306,18 @@ def build_api_model(
                 transport = AdmissionTransport(admission)
             if trace is not None:
                 transport = TraceTransport(trace, wrapped=transport)
+            timeout = httpx.Timeout(14400.0)
+            if read_timeout is not None:
+                seconds = float(read_timeout)
+                if not math.isfinite(seconds) or seconds <= 0:
+                    raise ValueError(
+                        "RPENT_HTTP_READ_TIMEOUT_S must be finite and positive"
+                    )
+                timeout = httpx.Timeout(
+                    connect=30.0, read=seconds, write=120.0, pool=30.0
+                )
             kwargs["http_client"] = httpx.AsyncClient(
-                transport=transport, timeout=httpx.Timeout(14400.0)
+                transport=transport, timeout=timeout
             )
         return provider_cls(**kwargs)
 
@@ -310,11 +328,14 @@ def build_api_model(
         resolved = _without_strict_tool_definitions(resolved)
     if trace is not None:
         from pydantic_ai.models.openai import OpenAIChatModel
+
         from rpent.planner.qwen import RecordedChatModel
 
         if type(resolved) is OpenAIChatModel:
             resolved = RecordedChatModel(
-                resolved.model_name, provider=resolved.provider, profile=resolved.profile
+                resolved.model_name,
+                provider=resolved.provider,
+                profile=resolved.profile,
             )
         if not isinstance(resolved, RecordedChatModel):
             raise ValueError("native request recording requires an OpenAI chat model")

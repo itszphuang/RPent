@@ -203,3 +203,15 @@ def test_batch_thinking_reaches_process_and_cannot_change_on_resume(
     finally:
         for sig, handler in handlers.items():
             batch.signal.signal(sig, handler)
+
+
+@pytest.mark.parametrize("kind", ["model_timeout", "model_transport"])
+def test_network_failure_precedes_deadline_with_zero_steps(tmp_path, kind):
+    (tmp_path / "transcript_api.json").write_text(
+        json.dumps({"error_kind": kind, "error": "connection interrupted"})
+    )
+    (tmp_path / "states.json").write_text(
+        json.dumps({"steps": [{"terminated": False, "model_env_steps": 0}]})
+    )
+    assert batch.transport_failure(tmp_path)["error_kind"] == kind
+    assert batch.terminal_failure(tmp_path, deadline=True) is None

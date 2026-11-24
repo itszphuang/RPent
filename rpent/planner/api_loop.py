@@ -28,8 +28,9 @@ from functools import partial
 from typing import Any
 from uuid import uuid4
 
+import httpx
 from jsonschema import Draft202012Validator
-from openai import APIConnectionError
+from openai import APIConnectionError, APITimeoutError
 from pydantic import ValidationError
 from pydantic_ai import (
     Agent,
@@ -58,7 +59,6 @@ from pydantic_ai.agent import WrapperAgent
 from pydantic_ai.capabilities import AbstractCapability, Thinking, on_event
 from pydantic_ai.capabilities.abstract import AgentNode, NodeResult, WrapRunHandler
 from pydantic_ai.exceptions import (
-    ModelAPIError,
     ModelHTTPError,
     UnexpectedModelBehavior,
     UsageLimitExceeded,
@@ -108,6 +108,20 @@ class _EnvironmentFailure(RuntimeError):
 
 class _RequestBudgetExhausted(Exception):
     """The conversation has used its configured model-request budget."""
+
+
+def _model_transport_kind(exc: BaseException) -> str | None:
+    """Recover network failures wrapped by the provider or its streaming adapter."""
+    seen = set()
+    kind = None
+    while exc is not None and id(exc) not in seen:
+        seen.add(id(exc))
+        if isinstance(exc, (httpx.ReadTimeout, APITimeoutError)):
+            return "model_timeout"
+        if isinstance(exc, (httpx.TransportError, APIConnectionError)):
+            kind = "model_transport"
+        exc = exc.__cause__ or exc.__context__
+    return kind
 
 
 def _is_response_truncation(exc: UnexpectedModelBehavior) -> bool:
@@ -372,7 +386,10 @@ class ApiAgentLoop(Planner):
             logger.info("%s", exc)
         except Exception as exc:
             session.stop_reason = "planner_error"
-            if isinstance(exc, asyncio.TimeoutError) and run.cancelled():
+            if transport_kind := _model_transport_kind(exc):
+                session.error_kind = transport_kind
+                session.error = f"{type(exc).__name__}: {exc}"
+            elif isinstance(exc, asyncio.TimeoutError) and run.cancelled():
                 # wait_for cancels this task only when its own deadline expires.
                 session.error = f"planner timed out after {self.timeout_s:g}s"
                 session.error_kind = "episode_timeout"
@@ -807,11 +824,8 @@ class _Session(AbstractCapability):
                 if isinstance(exc, InvalidActionResponse)
                 else None
             )
-            if isinstance(exc, APIConnectionError) or (
-                isinstance(exc, ModelAPIError)
-                and isinstance(exc.__cause__, APIConnectionError)
-            ):
-                self.error_kind = "model_transport"
+            if transport_kind := _model_transport_kind(exc):
+                self.error_kind = transport_kind
             if isinstance(exc, ModelHTTPError) and _is_context_overflow(exc):
                 self.error_kind = "context_limit"
             if isinstance(exc, UnexpectedModelBehavior):
