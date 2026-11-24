@@ -385,3 +385,38 @@ def test_generic_chat_trace_preserves_provider_model(tmp_path, monkeypatch):
     assert not isinstance(model, QwenChatModel)
     assert model.request_trace.directory == tmp_path
     assert model.model_name == "example-chat"
+
+
+@pytest.mark.parametrize(
+    ("terminal", "error", "accepted"),
+    [
+        (True, "GeneratorExit: ", True),
+        (False, "GeneratorExit: ", False),
+        (True, "ReadError: connection reset", False),
+    ],
+)
+def test_gzip_stream_closed_after_done(tmp_path, terminal, error, accepted):
+    import gzip
+
+    from rpent.evaluation.trajectory import read_response
+
+    event = {"choices": [{"delta": {"content": "ok"}, "finish_reason": "stop"}]}
+    stream = "data: " + json.dumps(event) + "\n\n"
+    if terminal:
+        stream += "data: [DONE]\n\n"
+    (tmp_path / "response.body").write_bytes(gzip.compress(stream.encode())[:-8])
+    (tmp_path / "metadata.json").write_text(
+        json.dumps(
+            {
+                "status_code": 200,
+                "complete": False,
+                "error": error,
+                "content_type": "text/event-stream",
+            }
+        )
+    )
+    if accepted:
+        assert read_response(tmp_path)[0]["content"] == "ok"
+    else:
+        with pytest.raises(ValueError):
+            read_response(tmp_path)
