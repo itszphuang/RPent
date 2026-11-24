@@ -370,3 +370,18 @@ def test_stream_reader_requires_done_and_keeps_tool_fragments(tmp_path):
     assert message["reasoning_content"] == "think"
     assert message["tool_calls"][0]["function"] == {"name": "finish", "arguments": "{}"}
     assert metadata["finish_reason"] == "tool_calls"
+
+
+def test_generic_chat_trace_preserves_provider_model(tmp_path, monkeypatch):
+    from rpent.planner.base import build_api_model
+    from rpent.planner.qwen import QwenChatModel, RecordedChatModel
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test-only")
+    model = build_api_model(
+        "openai-chat:example-chat", "http://127.0.0.1:1/v1",
+        strict_tool_definitions=False, request_trace_dir=tmp_path,
+    )
+    assert isinstance(model, RecordedChatModel)
+    assert not isinstance(model, QwenChatModel)
+    assert model.request_trace.directory == tmp_path
+    assert model.model_name == "example-chat"

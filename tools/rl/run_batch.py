@@ -130,7 +130,9 @@ def episode_options(args: argparse.Namespace) -> list[str]:
     """Pass every resolved value explicitly so a batch cannot drift mid-run."""
     result = []
     for flag in RUN_FLAGS:
-        result += [flag, str(getattr(args, flag[2:].replace("-", "_")))]
+        value = getattr(args, flag[2:].replace("-", "_"))
+        if value is not None:
+            result += [flag, str(value)]
     result.append("--no-thinking" if args.no_thinking else "--thinking")
     return result
 
