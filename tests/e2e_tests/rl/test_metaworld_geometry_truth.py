@@ -1,3 +1,17 @@
+# Copyright 2026 The RPent Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 """Compare actual planner pixel queries with independent native visual-surface rays."""
 
 import io
@@ -133,15 +147,15 @@ def test_metaworld_geometry_truth(tmp_path):
                         errors[body].append(1000 * error)
                     for body, values in errors.items():
                         rows.append(
-                            dict(
-                                camera=cam,
-                                pose=pose,
-                                display_size=size,
-                                surface=body,
-                                count=len(values),
-                                max_mm=max(values),
-                                median_mm=float(np.median(values)),
-                            )
+                            {
+                                "camera": cam,
+                                "pose": pose,
+                                "display_size": size,
+                                "surface": body,
+                                "count": len(values),
+                                "max_mm": max(values),
+                                "median_mm": float(np.median(values)),
+                            }
                         )
         report = Path(
             os.getenv(

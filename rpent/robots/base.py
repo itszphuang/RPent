@@ -60,7 +60,10 @@ def enumerate_robots() -> tuple[str, ...]:
         sorted(
             module.name
             for module in pkgutil.iter_modules(robots.__path__)
-            if module.ispkg and not module.name.startswith("_")
+            if module.ispkg
+            and not module.name.startswith("_")
+            # MetaWorld is a simulator backend of the rl robot.
+            and module.name != "metaworld"
         )
     )
 

@@ -1,3 +1,17 @@
+# Copyright 2026 The RPent Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 """Native MetaWorld scene, calibrated cameras, and fixed-horizon TCP control."""
 
 import mujoco
@@ -48,16 +62,16 @@ class Scene:
             d.geom_xpos[i, 2] + abs(d.geom_xmat[i].reshape(3, 3)[2]) @ m.geom_size[i]
             for i in boxes
         )
-        return dict(
-            coordinate_calibration=dict(
-                base_xyz=base.tolist(),
-                base_rotation=np.column_stack(
+        return {
+            "coordinate_calibration": {
+                "base_xyz": base.tolist(),
+                "base_rotation": np.column_stack(
                     (forward, np.cross(up, forward), up)
                 ).tolist(),
-                table_top_xyz=[*table.xpos[:2], top],
-                tcp="finger_pad_midpoint",
-            )
-        )
+                "table_top_xyz": [*table.xpos[:2], top],
+                "tcp": "finger_pad_midpoint",
+            }
+        }
 
     def pads(self):
         return np.stack(
@@ -68,17 +82,17 @@ class Scene:
         pads = self.pads()
         gap = np.linalg.norm(pads[0] - pads[1])
         steps = self.env.curr_path_length
-        return dict(
-            tcp_world=pads.mean(axis=0).tolist(),
-            opening=float(
+        return {
+            "tcp_world": pads.mean(axis=0).tolist(),
+            "opening": float(
                 np.clip((gap - CLOSED_GAP_M) / (OPEN_GAP_M - CLOSED_GAP_M), 0, 1)
             ),
-            model_env_steps=steps,
-            native_total_steps=steps,
-            init_settle_steps=0,
-            terminated=self.success,
-            truncated=steps >= 500 and not self.success,
-        )
+            "model_env_steps": steps,
+            "native_total_steps": steps,
+            "init_settle_steps": 0,
+            "terminated": self.success,
+            "truncated": steps >= 500 and not self.success,
+        }
 
     def advance(self, delta):
         if self.success or self.env.curr_path_length >= 500:
@@ -155,9 +169,9 @@ class Scene:
         c = (SIZE - 1) / 2
         far = self.model.stat.extent * self.model.vis.map.zfar
         depth[depth >= far * (1 - 1e-5)] = np.nan
-        return dict(
-            rgb=np.ascontiguousarray(rgb),
-            depth_m=np.ascontiguousarray(depth),
-            intrinsic_K=[[f, 0, c], [0, f, c], [0, 0, 1]],
-            extrinsic_cam2world=transform.tolist(),
-        )
+        return {
+            "rgb": np.ascontiguousarray(rgb),
+            "depth_m": np.ascontiguousarray(depth),
+            "intrinsic_K": [[f, 0, c], [0, f, c], [0, 0, 1]],
+            "extrinsic_cam2world": transform.tolist(),
+        }

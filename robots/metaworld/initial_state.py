@@ -1,3 +1,17 @@
+# Copyright 2026 The RPent Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 """Replay an index from the official MT1 task table in a fresh native scene."""
 
 import hashlib
@@ -23,11 +37,11 @@ def initial_scene(task_name, index, benchmark=None):
         env.reset(seed=index)
         if env.curr_path_length != 0 or env.max_path_length != 500:
             raise RuntimeError("Unexpected MetaWorld native step budget")
-        identity = dict(
-            task_index=index,
-            rand_vec_sha256=digest(pickle.loads(task.data)["rand_vec"]),
-            init_qpos_sha256=digest(env.data.qpos),
-        )
+        identity = {
+            "task_index": index,
+            "rand_vec_sha256": digest(pickle.loads(task.data)["rand_vec"]),
+            "init_qpos_sha256": digest(env.data.qpos),
+        }
         return env, identity
     except BaseException:
         env.close()
