@@ -90,7 +90,7 @@ def validate_request(
     ):
         raise ValueError("explicit init_state_id must match the native seed index")
     name = task.get("suite") if environment == "libero" else task.get("task_name")
-    if not isinstance(name, str) or re.fullmatch(r"[A-Za-z0-9_]+", name) is None:
+    if not isinstance(name, str) or re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_-]*", name) is None:
         raise ValueError("invalid native task identifier")
     if environment == "libero" and (
         type(task.get("task")) is not int or task["task"] < 0

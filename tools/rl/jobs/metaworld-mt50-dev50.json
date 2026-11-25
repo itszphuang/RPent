@@ -1,0 +1,402 @@
+[
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "f137d09e5f38d374b85cf21b5e1f31f04c1b7b5c3a595644737dc2feb0fe70fb",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "0635fe5e4d921070a56055345beb1b124ef97472ddde27a167408bbf33396eb8",
+    "init_qpos_sha256": "6d8b2df2348c52aa67796e30ecaa7f5d24b7ddea2c2f3128344bfcaa1d255715"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "c8922e7f549bff14835b8f3afcb1ef6244ade3b76b0d38a3b4cc72b68d8f020d",
+    "init_qpos_sha256": "82b19bdedc7f5965e3fcdfcb757e51dec3d2132972b111d8fa43f36e3a7e563b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "9f86b6ca48690fd27babf350a8ceab14305c345ae1bcd66f4a09ca2d21dc053a",
+    "init_qpos_sha256": "1a9a196b5696b8c329b6db96740f9f5ea0ba807bc8bd0006726711736eab4a5f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "8bdbcdf22ea79fdb4f99a0d90f874766b3710439084d7491aaaf15fb74050dbf",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "8bdbcdf22ea79fdb4f99a0d90f874766b3710439084d7491aaaf15fb74050dbf",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "91e6aacf37b254c4060e375d9ced538838c7516ccb4334261875ad40b82d6e9c",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "41676a4913ccb1e31464676813324e95bed90601d00d890a511e5b65129ab77e",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "ba3c3ebfdde3490969671d8638cd2866c8cc2daa01db3377d9190795df516148",
+    "init_qpos_sha256": "e152f26dd0637684a9e650e6d2a8255f68de7fe5990ba3113841e5ded88c46da"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "0fe4baffff23ce055a3ad42c6a0decfe3ee359408cbaa17ad2ca02c88d85c0a8",
+    "init_qpos_sha256": "7b2aabfc0b6cbfa3c12968677676302705e231d53e1ff4caac093af4d8ef602e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "5d33faa381dd836fb4c54a5d821848490a25c216635c658929d9a6f7d0fcaceb",
+    "init_qpos_sha256": "1485168787b8d492a8c0ab1130071c9b7860b49ba79f2db4c9250df88a0f9a83"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "e6eada5e048dac1470c54c310788acd6e31a504cc92c2b8fa82be3bec937eaf2",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "e9accabed6127faf863091bd46888730e2d68a97c1e49fb04684a30882168c2a",
+    "init_qpos_sha256": "1ecb306ba51c0e354ba8490be58693d162474a5ea0c69a9dd003dcae26a0a70d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "15b492df9806297d843de251287643c763644d530a11ac86a7ef056593bcff9d",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "c5e51476aaf6475b847f307663be6babb392e962cfaf3d618baa9273a77145dc",
+    "init_qpos_sha256": "2a67a3d96b0ba095d73b9a1120a290828c971505b858a8d438a4594df7d92235"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "15b492df9806297d843de251287643c763644d530a11ac86a7ef056593bcff9d",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "c5e51476aaf6475b847f307663be6babb392e962cfaf3d618baa9273a77145dc",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "cb46a8316fb1c157d77a0c1ccf9bb1ca6dbaf48b6e7164f8682b4fc43b6bf041",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "cb46a8316fb1c157d77a0c1ccf9bb1ca6dbaf48b6e7164f8682b4fc43b6bf041",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "f3650f9587fe6971292f5a845dc306f36f4da27cfec995fd26528ca7c31c3c3b",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "2c36f9c584a4444b722b779c6057bef57ad551563b1b0173e8f889028fd70c80",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "cd3a6907f532228c46c4af9f5dee3e2476444c5b8384235bb2cdcc4cca1dfbae",
+    "init_qpos_sha256": "a270ce71ce704e39b6dea78b1a44974417642b5a2833a565b1f95d637a887345"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "1b0944c17d7813cf0ca79ad1ec55417d81406d41e32a843798054409892d063a",
+    "init_qpos_sha256": "270ae83fb1dcb5deb91e05f18a9662259594df56bca98899b2e6cd09463e1ce6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "0145d73941b8a57f62d79cd68f6e51f0edace8378e4ebaef8f26ceb758e8fdf5",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "ba3c3ebfdde3490969671d8638cd2866c8cc2daa01db3377d9190795df516148",
+    "init_qpos_sha256": "cd31ba3a91a53bbb00cb98e46701c3f11a9f32b434c5f2f0a97b88a7c58fb1b1"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "3e87180fc21b8653f0782ba6579b64d7e53e3a7ee3fff8e16d00b184f4ba101a",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "ba3c3ebfdde3490969671d8638cd2866c8cc2daa01db3377d9190795df516148",
+    "init_qpos_sha256": "88060fac8e83afe637d0a6380026148e8699011499137d6996fd6e96be013177"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "e6eada5e048dac1470c54c310788acd6e31a504cc92c2b8fa82be3bec937eaf2",
+    "init_qpos_sha256": "8e1c3803fba534a0293e9c6457d7a9d14b54970e12d25136d7d4ba39331f6ba6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "cce4835330a0218e35e1d8f5e4c7a73f4a1856a7ead3d8730e1120a4ab8a6cc4",
+    "init_qpos_sha256": "e1ff960247f0ef4f8ce6c59dfd2a3e3ef979a5ec790e004689ac77c6e02c899a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "1677101b16387e84cf1b6d6092d0fe223c461d8f9030abc4fb661786b5cf09f7",
+    "init_qpos_sha256": "f8d97fb5267f29fcd17c575c87922a41c1dbef4a5caa144e184073283f230b62"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "7f9a876a5bc0098f124140e2ae0f1c5834399376615005e1390dbee2a8127be3",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "39062a007434a0e5876dadebafbd1e06252f78462a2abcb174aa8ce167ec4641",
+    "init_qpos_sha256": "dccaa738d2d526e2b1b8831dd2c6f8be4544f2cc11e5074598a3e10f09cc2703"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "973bf9ed70aecaa4cf8a0405eaa441ce6f77219f4176c4594c789cbf92be3f42",
+    "init_qpos_sha256": "5c1fe3b976e74e5bb2a7a350f12b1b47ac6d1b10e5b2636123457bfeeb5cedb8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "ef1043817c08f5930b5467dc5002746257bb09de6580557461b80cba31e1d6d3",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "b8a91b850948cf8dbbb6b892416c34c2cea2e3ea845f7430b56a5ee01e945043",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "5768298e93a381c0328d0c9d2df20ff5b4b657c67ffc269feafa9db48df4dd4e",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "c54466f7d76f24a53da4e34bd3383fab478b8d50ea5bb9d5d01cf40021918b9b",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "e7e01afb900be8eeed5793cb244910c22d58af6f56c8bb3e2326add39bb35df1",
+    "init_qpos_sha256": "0b68b759bde12ea4237431439460ff0db0fb0370b51f49c6b389c70160f834c2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "107c05403e6498b637e64ee15fd41b43c3aa6ec66ad8a074d9047f3d550e7807",
+    "init_qpos_sha256": "eaf4f29ee1580bc33fcfef0002330815bbf4de0b5a1862b70d7a66873eadb6a5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "761bbd82f58349086806f25e8d9733ce80d556fd7fcb0dd9ab525b4dfa012174",
+    "init_qpos_sha256": "d599ee13ec1337d02060bf67a25b821754a8d37490d4d6e440c7a9b4845d90b1"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "39062a007434a0e5876dadebafbd1e06252f78462a2abcb174aa8ce167ec4641",
+    "init_qpos_sha256": "dccaa738d2d526e2b1b8831dd2c6f8be4544f2cc11e5074598a3e10f09cc2703"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "973bf9ed70aecaa4cf8a0405eaa441ce6f77219f4176c4594c789cbf92be3f42",
+    "init_qpos_sha256": "6e5bc4332327a2c71c552fc772da4100110a47453ec5129074d1c81ff721da2b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "cca38cbf40ea0a537deca369e27f8a9b54c248bf9187d02f91eaf0c8fe9271f5",
+    "init_qpos_sha256": "b93fcbd8245a84ec67a345d1ead6dbf2889e3633b4f3bc3138ebbe40ea57ad16"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "f9f48c4abf78b10dce70509f9688d898a3cdcd9e1b4909c2a96695a65815b893",
+    "init_qpos_sha256": "8582264851b1aa892e474069520ad40285104cf5de3c02d975f05e6fa7234875"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "2223f593d7c983e03daadb2b8f6543f05954af59561944d4350a0548bff8f421",
+    "init_qpos_sha256": "1c1d4c20882d7511d584c8c44cfb14f2b5922eb096a84e070b096a1a138568d4"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "8adae7e8f339d2977e458036c77a3c12c475b0b31043946f1fc34e53ac490789",
+    "init_qpos_sha256": "48dd866398a5f05ca96e2f56c81b26c2871694eb9ee8fc9cac6080f451c8fa37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "bb2492a02bc5ff6d3e3924575691b5815cf5eb38e74dba0692d690b041061701",
+    "init_qpos_sha256": "142fc792289f82494521a342c176a57b7b4384712951d68f43e42b3109927678"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "adb0bd82b04879057d3b3d7affb6e54c9ba78ef1dfb85ec2ed3829990b77df60",
+    "init_qpos_sha256": "841e6707fb077ecd78457b4f4a6c3905947d128632b4af86cb95035a0b4fb638"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "4f3f945ec03985294e6d6aa3c3b1ca1f9a79460de23b890c89576e1095bad646",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 49,
+    "task_index": 49,
+    "rand_vec_sha256": "5a5598cd6f13e13435d38febe6540de5560e3b44a93fddcc7b8f377f48cba7fa",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  }
+]

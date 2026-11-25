@@ -155,16 +155,10 @@ def _as_tool_response(user_message: dict[str, Any]) -> dict[str, Any]:
     return {**user_message, "content": framed}
 
 
-class QwenChatModel(OpenAIChatModel):
-    """``OpenAIChatModel`` whose tool-returned images stay inside the tool loop.
-
-    The trailing ``user`` message pydantic-ai builds from a tool's files is
-    framed by ``<tool_response>`` tags, so the Qwen3.5 template does not take
-    it for a new user query and keeps the reasoning of every earlier turn.
-    """
+class RecordedChatModel(OpenAIChatModel):
+    """Record chat completions without changing the provider message format."""
 
     request_trace = None
-    tokenizer_path = None
 
     async def _completions_create(
         self, messages, stream, model_settings, model_request_parameters
@@ -184,6 +178,17 @@ class QwenChatModel(OpenAIChatModel):
             )
         finally:
             reset_native(token)
+
+
+class QwenChatModel(RecordedChatModel):
+    """``OpenAIChatModel`` whose tool-returned images stay inside the tool loop.
+
+    The trailing ``user`` message pydantic-ai builds from a tool's files is
+    framed by ``<tool_response>`` tags, so the Qwen3.5 template does not take
+    it for a new user query and keeps the reasoning of every earlier turn.
+    """
+
+    tokenizer_path = None
 
     async def _map_user_message(self, message: ModelRequest) -> AsyncIterator[Any]:
         mapped = [item async for item in super()._map_user_message(message)]

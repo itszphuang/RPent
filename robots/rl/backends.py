@@ -78,7 +78,7 @@ class ScenePrimitives(LiberoRLPrimitives):
         with self._state.record_step(
             state=state,
             terminated=self.native_success(),
-            truncated=self.env_steps >= self._max_episode_steps,
+            truncated=state.get("truncated", self.env_steps >= self._max_episode_steps),
             command=command,
             result=result,
             elapsed_s=elapsed_s,

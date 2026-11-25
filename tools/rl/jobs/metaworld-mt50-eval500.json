@@ -1,0 +1,4002 @@
+[
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "2012360fe93067565de74e5f387a524e8fd47da3e10de0b9768f72cfd942a62a",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "e9fa5980b89fc692d781b948f3fa77334e0c2647d4e34513094d3f94fc7ba567",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "855ea07ed0f5ccb69903daab58465d75387026a865b3e985cdce0f01b64450af",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "6d92f3f95948481da8b063b3eee1d917e5cb44c9086e7571b187ad84cc169ec0",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "74a65f2ea18f69fab6d7f5bf20c2cd1eb1bcc9eabd5ad9980d3497004f89c287",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "7077d35229415d97891b216a4a29dba2717f9a9c0f5371339c0f8bb847cdb111",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "7ea9bc614a22cc5e9b5d3b0ddcc28d4598e2711b25a5b5ec68a49ca2d8987619",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "840c0e950bf21c6604ffb39aff31104bae20c45024180b361412ceedd1773032",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "795a02fa08cdfcc9b9428120e9bb6b415632d25c49d7128a369c477594a017de",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "assembly-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "ea28bbf7354a6a1ff40c22da1bac0bbf56347f9db6d164ea1eb5400ea2703a9f",
+    "init_qpos_sha256": "314e9092bbc2df55d2165f7ffae2182b4a109d64a20ced09b7954e02855d1ec8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "e0163cec9e2d9c4e08eb1db8226afdcb1ddcfd733c312017bef1239ad608f1d7",
+    "init_qpos_sha256": "440faaef03b678b8cc962caaa8b0e6753500f45084119549333bd135ddad1e26"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "374a5177e6d280820e696eecfe23f7237fcce274d1a6603b47bfeda7b84038e2",
+    "init_qpos_sha256": "93661cd4e478b64a5b9a7034a99c08d8923143373c02f6be8679fcdcd1f67c4d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "74405b12764c15b87ca2857ddf68ea5b33472dfa937410ff7f67e853bd6af70e",
+    "init_qpos_sha256": "272473680840a20913e3ac01c906a1be898c0b1947cca3d6ea2aa2c5d10dafa7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "6617eff3a3959f40b706f56cede6f725088555453602247e0e573cb03096a8c6",
+    "init_qpos_sha256": "b3e46705dd96dd0511c46ea01a15135303848f096022abf476cae1d161ae411c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "cb2a96ab32464eefd8bac9d9d6075df6d8511225be962192df7a1ce003882c1c",
+    "init_qpos_sha256": "74753102564f4dd9de9d9bc403e4165e98246fabf310614ee421556752271ea7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "8d76f6f024a73940e929c4fe620b746e8e579a683f84d9db2d550982a21a6814",
+    "init_qpos_sha256": "74e2d1d273c4914f0eb168eb9e733109a9845a5a5f8bcf27394d260d708de5e5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "e7936e0b770b365a660cff7a2d2e8bf5fed16a813755193e078e3a0c655d5187",
+    "init_qpos_sha256": "2942b614eca1ce7ecef25e27dc7c974906528cbadaccc8d4482b9c9e9f096c8c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "660d6e136f8349e679baeb515231270aa93978fcb99febb49e8ad9910e35f0b2",
+    "init_qpos_sha256": "d97be2c1458acd70f04ca6599b485bca19d96124d16c79db8a65dcd19aab8ca7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "cee8b407c39f54a47c9edabe23a9696aab1132232900a452c5936aa4ba8cc50a",
+    "init_qpos_sha256": "11409636fe8ba754e0aa66dd017792fd828dfca6a2c2b0c092a370751499e3c3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "basketball-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "72bc147ef34d7d368d6e6a4213e6f899516c58da8d6e73a1a92b555b6f65956b",
+    "init_qpos_sha256": "de37f2ac92568098fa1b93a3ac7c60408dcf00d59910c14144ea43a1a6c11fcf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "e858efc951c8259746252d42954c89101f22b30124b8fb03e91ae517ad13fbdb",
+    "init_qpos_sha256": "1a7fbfc3e10b10e3f24a4ecef4d555aee74f807f10444df2b69cf8135b87d893"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "da47552077a1878ad95987075ff3c8e5187b01b9eea1803d08174d84c8543249",
+    "init_qpos_sha256": "19f55965456707312dd54c9f4fdca42ac2c61b0a2a7108a993722e6110dfc9a5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "233c497c4cbd2845da97010b916f47ace5103bbdb05de2ec557b2f4630bc0623",
+    "init_qpos_sha256": "526be4e74bc9de363645c518be8ee207c800b7632d8b15320f04dd2dda3a922b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "4d60cf1cd4e87b68f4b1f863329fe70f3273345187fdbc6e2f03e2f2eba9dc4f",
+    "init_qpos_sha256": "aa0b8e22e19ecc1981e836c6a77b78c60118e8eefb6ffd7bb6e66b0fd7a2b9c3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "ee32006c7e6c017dd44ab46f82852e59ec048c4d94d27c1d31ed025f882be2dd",
+    "init_qpos_sha256": "88da41dbffad6f7c2b0265b46360270c6e0cffc48a4e450cb843a3278367cb72"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "649158f26e25e6229ff897d157c8d676c14a71075555dd700b14ba9fe1d667a6",
+    "init_qpos_sha256": "0d41d9866c78f50d7fe11afb4e256d99839ed28cdd05b43c1620e577e198040a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "ca674875f84c623364535d6412bfd7872eec39d48a86208608078cebb326b476",
+    "init_qpos_sha256": "ebe469c08fc33fda3d3d579ff3a3e7352f76e059a0e64d2e7a5b034c14622dc5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "9164ddf410da71e1f4361981869fc71ee23be1f0422224a19519f00bf5f53521",
+    "init_qpos_sha256": "c77161dffa2dcc2312b0dd3930fb7c0e9892293671a4364d89a1033678c009f7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "76c68aa006fe455aedd4bd2d8a9560ad6c7b888e4283272a57b1ddeeaf7f24f8",
+    "init_qpos_sha256": "8ee100f2fbf6299ac67596f526bce63f4ed33f37ecea09ffbd5fe3e901fa5565"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "bin-picking-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "5eb8d3d6c1e7527ba27e7fc750d32e5a5f4e018ee3fceb83d180e9dd8c280726",
+    "init_qpos_sha256": "85d251e569267f50fab8cb8427994a50aff52ada96ef0d90c5a95f51fb51d568"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "522943ed9d5938cc788e8b11bd76b177c5cfb14699aeee9601f8718480332a0b",
+    "init_qpos_sha256": "8a09500640f1cc3ede8eddf536ab84d0d48a58e48899569a7cf1f9748b22e1e3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "942d0a4ca5f673b8a47eade9d734dbdb3201a3de786bde88b651ca8615f04a06",
+    "init_qpos_sha256": "179ea971cd872969f71a7930e0ad19378c96618b33da70134bd6d2e2745eb22b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "1cd1f61729da335b879147a6857eca5daa70c577017fe40883968a005b99be3c",
+    "init_qpos_sha256": "eaf34f1a42d5879a464f2d8b85c423406244b12289977d584067971799aaa5fa"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "202ccd53dc50a841870a018ab3b15552291fc8de883a94aa334e8b144cad4255",
+    "init_qpos_sha256": "6ec5a975215d47d8c6161a4dc1e18524c3c51ac8325110267079fa6fc6e2ae35"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "8e8844a8343ce3195f2dee353f194b5cab47815a45ee73e26ba88fc3d50a4816",
+    "init_qpos_sha256": "667e7563bc4c947107aeb9c072e862b0953e52490fff55b17951084f322cf267"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "1609c56abf0f1e9b9b0ad7c7abf2cedf2bd29a63c6b2f1581e42795bf630c5da",
+    "init_qpos_sha256": "12f2826a0d7119cb4b334c41c330981bd8e6665497f424e08e427d1fb99438d5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "f29dfc09407a48b09f48b273e554307312d9c6bad81fb62161d8b2d6be9b9cbe",
+    "init_qpos_sha256": "6bd7ba97f64603d09596b428530a5578ae688f85de86b99003e117965a9c5043"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "b0c6057057f664f3da480bf9d1f6fa9d85769f58cfc2d28fba681074a628dad2",
+    "init_qpos_sha256": "126586eaa7193e25374eb202c1deb6efdefe4d77fd363daaaf6653a9df835e2f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "e9d1115a70c2a6220c8874c1f5980faa56f922b7e056f8c224dcb0581d9f696b",
+    "init_qpos_sha256": "3b3ddcff9d4ecd549e0cfd686251fd7c71014ff2f3a83924a054298891bef1c8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "box-close-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "4e07d4022e5b11b2490932a6fd56facbe8d3e18432a65049971af8e38cf19b26",
+    "init_qpos_sha256": "01c984a1ed2888dcbe566edbe9b53bef033043cbb6cf55f0a6fb32b73bca20c0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "ae47306cb926bd92061dfbdefa5abc0674ac07403006fdcb15e74af142e021cb",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "0f4acce3b978e8b7eb89e69c80cd29c135641992cbda7629214fab9efb04ae79",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "303c1ab515d43af63f58282a100a3e84127d8f169e1ab391d539b41c7dedc216",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "51fb11be58146a19e1db58dce1451c5fa06de82628cbeea600148e027346c08a",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "a230473ffda6234bd48eed9498e5bf52cb849f75dcaf4c707ff4f3effcda6fd4",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "a9bd72f5ef30f50d222fd17ccaccd37f3d4b32d809790aad1289ed484f90fd28",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "764ad3e899d03bdfc3edb173a99ff993ae6632a61638792ef1ff85a28a02035b",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "4b1ec8e9d0ae69418524b7b9ff141857bcd222f43b710cc2d9927f5ad7ec760d",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "2e7fd9bbb2af52f6a5a337188216cf8d6708f19ca2b30f70defa9f69aab8cf0d",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "1758a6b8036df46b6fd1876d41684d065e6abed059fc8f1bbacd9c3027b7aea8",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "ae47306cb926bd92061dfbdefa5abc0674ac07403006fdcb15e74af142e021cb",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "0f4acce3b978e8b7eb89e69c80cd29c135641992cbda7629214fab9efb04ae79",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "303c1ab515d43af63f58282a100a3e84127d8f169e1ab391d539b41c7dedc216",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "51fb11be58146a19e1db58dce1451c5fa06de82628cbeea600148e027346c08a",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "a230473ffda6234bd48eed9498e5bf52cb849f75dcaf4c707ff4f3effcda6fd4",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "a9bd72f5ef30f50d222fd17ccaccd37f3d4b32d809790aad1289ed484f90fd28",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "764ad3e899d03bdfc3edb173a99ff993ae6632a61638792ef1ff85a28a02035b",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "4b1ec8e9d0ae69418524b7b9ff141857bcd222f43b710cc2d9927f5ad7ec760d",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "2e7fd9bbb2af52f6a5a337188216cf8d6708f19ca2b30f70defa9f69aab8cf0d",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-topdown-wall-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "1758a6b8036df46b6fd1876d41684d065e6abed059fc8f1bbacd9c3027b7aea8",
+    "init_qpos_sha256": "8222f4f38a8495134d87785311ff7329d2798a3fb1793aacc72d99483d17c444"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "c57d9fc77ccde295d2cd321d3b346f23e42e232955c9cfc4ba28efeee8a58556",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "6965f0b36c99e28dfdffbfa704f46ddbd9347976b3271dcbbaa7be95f802a363",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "fb43f2d172732f0245e28fa7947150318eb601e29a83689850323467dbf15e58",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "37ad020318f920233c7caf07c551b9a217793583f4300908e5508ed100b4bff2",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "3ce7464c1236e80b6bf7a5e079390fddbf859712ba259bf8e1bc4612011e77f7",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "c2d8b1785c5a5a05da2d2bc0a0348e3ef5e312884902b7482e82c19508110add",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "8c32169fe4f3bde025d7818d529c028d9780419227d650e3b2976b53d85cdfeb",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "83efe21b5b7275fc57a6b2960b48b8553512a106feaaf1d5d258a8e9a08b0d71",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "f9027c4026c60cff6f114c2ca395ba5f699524bbd621d3732f4c995d794818b1",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "937e474de8a67259bcc3764a2180e10d54b818d2f4d1fada2ab61652e8f238ed",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "c98b749a5a7dc5707deb53c3e87a8550c2e7c2aa187011707a4b294d8aab2708",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "04768eb1a63280230cf663cdc7e8d325cbe3e0ed89f147ceaf5a9d1e91710963",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "50be8e7f4680a7b6bdcc9781d0e00894c24b45483a8b8c5d6972e56b718f5530",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "b721a2cf02311557838a9e8df94f648c491d923f6c98078fa8567fb700229bdb",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "b946aa2676ff332aa4312270b8b84f6b04f120fae3b674d7d39a4298949d6159",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "760d2301b982efa1488288421227e5d45dc11829e77ebb647adc226726f33d0c",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "479c4f4422a5ad2ddb577328a0f29c4c73f6fc56a589a8040aa6c33331d3e064",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "b0561d672a5b827f459a8ba075cce08c6c6225c52b082383b49f10847b908b0e",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "fd6e93790044fd8067ceef0dd00fdc8db4b6f71b6d498d50a6121038151aa393",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "button-press-wall-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "7b5fd5f8c1114f323aa8545bcde0e8f5f2b753039bdc831cc9eeffe8834bd3d6",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "de0a48190f3c11371a90099130beabf8ca867f9dabb57b5346f5a7641d420a47",
+    "init_qpos_sha256": "b2ef4d3c8f26c1b68357dc2ddedbb76dd2d1bfa1016e791de08bfe80b024705d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "caa0b672a0878eef8fd3184121e94fc564a3de148833b6b7adc27818d9cb1ea2",
+    "init_qpos_sha256": "ab72f21201f0e8b777aee69bcf4f133781b01354d9a3b4e9668b3f0295fbc253"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "1678bd3d01fa3867fa08afc18abb497268ec8e313dc039b2c7d7639ec58842f5",
+    "init_qpos_sha256": "5a0a428aae220b68d12a0ddf1dbd8470b2994bf5eb83672e25ce43d2ca8d900b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "6565f1905bea8d836c40d63bbff1eb7ca4fe4ffcfa8eb14064fba8f591bcebb3",
+    "init_qpos_sha256": "9f5c4d3b16827bc7ecf11839eb911d12807e2b64cd33d3be65c0401f244f99bc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "83ba05d6654d376618dec7fb47e336248545ab3e1deef8d4a6042c033165892f",
+    "init_qpos_sha256": "95a08ca7e6da9fae9e8477bf4c8ac978c2366c2f5a1f8f15f18dffc3eac1ef04"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "3dd424eceb20288ed0009b291c139710cc82fe160196128ad3e07e23a01ddaa8",
+    "init_qpos_sha256": "9a6ae9d7454c0bc32d93940b98f251efff62e17385b4e20d5b263bc6f2bb354b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "0d3d0d4da27c72b15437ae12fe33ad4e303746a5cb8251917593ae194d3fde12",
+    "init_qpos_sha256": "0dfd502ec93197ac690cac19a45a0f736d90917655cc4bbf2785ff6777284ac6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "499ee836be06c0128d7d56a5a47470d03461fbaa496028c40759724004a8d849",
+    "init_qpos_sha256": "3a5d63753c6f3bd3d5efa9b03bd43f784ed13112bb63306496e8a7df0634e777"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c285f709404ea4370e1faec015c1690ac083cdc69efc6e551c2550d956e727aa",
+    "init_qpos_sha256": "aea9a1cb4ff0f17503e2f1aa1a89f1f0c6b4820c988360d71052c18c2feee936"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-button-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "34cf3125a02f4397893d2ad5e74aefbe80dec87a207d61750deea4ca303430bd",
+    "init_qpos_sha256": "f2742fe5c513d8171bc8cb9163712e60e07e93c43030b00dc7daa6006815ca6b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "7871cfd214d691a03100a4e0520c4e43166d686d5a04bd4e0c735673162d8121",
+    "init_qpos_sha256": "74f4e5e12e39679596682851292db42f7883a83c7854d5d6a25f483f87f8b8ef"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "47c5372d33d5dc9a09969b73344493e14d59002ae086f2c75e9d5550b79ae8d6",
+    "init_qpos_sha256": "34f255ce9ba98420e88315760a3acada28def937a18d0f1bddd309818e87a9e2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "69058e59397d50c70fdbb83e13112214d7256ea5f60de5a26ad253b138d75fb2",
+    "init_qpos_sha256": "3c8cfeb5bc540577d932ebb7468c865a6540e15de3751c8dc9a35ec6eb5ee0ea"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "175eab2d2c940033a2ea25030113043d777a2b06df9c2cb282e8a4df16895a25",
+    "init_qpos_sha256": "b2a6c3901dc7bb90c64c9f96b9027638f8e64dd53a86bf4cf36774b6fd80da13"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "ee61913368e088312a715abfaf0931bf57b169e42b88cfd3300406360b863ae8",
+    "init_qpos_sha256": "05a6273fee197d0569457a636cacf74fcf74c8f362b895a010a46e65af18a256"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "d9f96fab57724848ce8858e78b28a7b8dc6ce9d86729e7f25e619389a1464257",
+    "init_qpos_sha256": "e837ffbc9836a794f9cccfbc7a6924bc92862b244fe05a2e29cbb50863214b7c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "4a607861edc2b4960900db0e085a69966393736cad65b7bc1320a29ac34b9cc2",
+    "init_qpos_sha256": "4f39d870061a4130572f69097ee0b89e9848ea11e31f2ef4a8286166b90745b8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "5b7d71b2b5b0558c8722a9bb6867daaab5a1b4c999ad5e164e69cb8e1bb2d2d7",
+    "init_qpos_sha256": "8db9d583104de5086aea5270a2977256cc67e78640655d8106491bee6ffdb75b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c9f5d488d15cf06596d571ee936698925cb5f30717ee7403dbaf5d77e1fbbab4",
+    "init_qpos_sha256": "eee15b14df569b4d7bb7c839d3f57689171a005e6ba0266b8ef6b760952e1ddc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-pull-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "2bb21cc7e58a4180f6390507abc387af90f32005d9ed92a7cedc46418cacfb51",
+    "init_qpos_sha256": "fa89226dcc12700788181cbd7d66d8214a65bbf400490b3459863c7562ed9fb1"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "2b7d7a7d4e939ba88a688b83c7d38242e5e2483bf33988ebd55e2e304041b532",
+    "init_qpos_sha256": "c731789e20ccf9b53c13abd670c62541bfd5eb069a94083c0079eb1762061aa9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "c57f33ebbf7bbaafe4b69853a9498f9ab1a32e99916f9c36a6e14d4f8c647cb3",
+    "init_qpos_sha256": "0fdd6c94477525ee7b7ecf52db363fd203b972edcf78303c3f633b43b6714cba"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "900d607deaebcf82f3f77557d12586bf861f208272142d70adb312ff7ce1bbc2",
+    "init_qpos_sha256": "5c3d19caea00ce745bfe2da98ee5deee5f5bed1a1558d90734cdf378f8a149c4"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "9bd8f7f6f42a20263d28436ee1256bf6d231e5f95554d29556ae6d16141b6d34",
+    "init_qpos_sha256": "8152c6cce5c0ed02532bf012d715454d358e041e94f0fc41927c3662136eddcc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "c038496724bdfccc08775f83ee8db97a046d1675a097f6786e4c295b8e5bcd6c",
+    "init_qpos_sha256": "84e7a27c5e8670b5a33236de4d766bcb2cb2c8448c2f0397d772d8a00d5258de"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "e2d5a58fcbb322610e0edeaeabb71332c43674c4c4f2019f1ff75fc8711363d1",
+    "init_qpos_sha256": "7393a213ce5b569cbdf670da4e6b2b5eebc4dc48535f9a8db1db0c7e455c9dd5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "f4a727342f2742bb1230124a6c108205e4a46610ffc5a1023da87db489eebdb6",
+    "init_qpos_sha256": "09c0e71c162ae80ed07b650b9515f7b8d04bc7a6a42101c09b25d1b08a47c053"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "110b85dbc5b9fc2cff66589e4a4927fb740244b2fbf2f6ee76c9820d56dc5720",
+    "init_qpos_sha256": "425cc84aa063a7e09d085e73f0040b3ea56f77ce01e5d629a42f33857580f946"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "5b93508f12202b24517f3142a5f565dd517b038d54b136e1a506b2a70e99e1c9",
+    "init_qpos_sha256": "eccb2c4e9f97ec53069f631e045555d9bbc687ed485d8f1fc85121ef930087c3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "coffee-push-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "43a8cad656e3a30cf109fa76e82e8822126d96d89f6223ee39f85dd307037a53",
+    "init_qpos_sha256": "296ed525d0786223c0b497943e50132f532e33a3f4d5fcb50c43c05cb2b0e498"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "0bf4ff49cddc60bdcba2b0f951d461cbc63908791b6a4390ee65181a4ad8d8c0",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "39f18fa9f44b1d0f8e501988025390e088610fbffe37523c29b6f923a547e495",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "e73f86714b5e33e576b3b41ed7027f2bfaec8054195086c688d9d8e0aa93ba6b",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "e82297f8b716b2d333dee2bdb13a6ccf67011003e0b892740d49cfdd6db64607",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "8308f42ab52a1106e6320992fd43141370487fd23190698b8932a3a8b6fd3969",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "aefc581baa30d069c2a3738fdbf1b847f951d4ee82ec9066695fa4f0ced1b0b7",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "bd2a3eb388919e0ff880694e537eb1acb4bc4e608cd837fd87a4fd3b1a84fa53",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "e6ec5a271ea9c2eae663bd5504ca46a1856b65a36118334943d67bc3a51c54af",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "4ecb35c1934e556525d03996ce1899749085b88d3330f67838ae1d972eedbdd2",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "dial-turn-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "b61f4d7bb076cd67317502ec1e0531419f378d4c8feae0ddeac6b7048be52053",
+    "init_qpos_sha256": "f73b4de023f5de5f9d1841ca1bc34b365038fd96dcbaded21a4f9489d008cc90"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "0c37abd983e1987b93a9dfb885806daa7ff22ab5944fd78368e16e5a8d6f6c15",
+    "init_qpos_sha256": "9133d448d97eabde73df71ea91d01654bf4869791da6220b2da46c0930985773"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "c96138fc6da9f9066fa3798b533bdb4b88d7fdad67e6d783dc22033fd2968f61",
+    "init_qpos_sha256": "cc7f5a6eae137d830e7a41d15dd95a018b803befbf1e521303cbe84b4cf800c8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "f096f11189abb8544fe2b3d03cdf90c4b6e9b042bcbdee1bb44a217f500a5d2f",
+    "init_qpos_sha256": "a10c16fda928e203c4c083f2f031274f322243ef930f7e33c55f16945ce57c7e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "29519e27eebec7f80dccd3d9da0db9c71371a15d4b0d430f4ca7699893be63e5",
+    "init_qpos_sha256": "45f4af45ccfb6275a9ac50f21b8dbeae6104f7641bb0fb142e7506ed7a68aab9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "35e07808a2858e99804f28b5e07b8a2e43af1465c2a80cf38b5dce800f18d9e2",
+    "init_qpos_sha256": "efdb09dcf4d5957ee903b36cd79105a4ece97ecf56acec053a57eb33c9657081"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "4beae07b38325ce4f78fb0000dee36aae19cecc21f724a4d8673fb17b274b70b",
+    "init_qpos_sha256": "8d63aa0bdbc7588fb78bcf08d8f89063c18b340c60b73218a51675c8bfdd485a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "e1cd282b5f93397fb7d173fb875422b916ab82c77f1ab13050ceece8966b6174",
+    "init_qpos_sha256": "5b70cf39a0e7509d54fb9bfa69b04ff61b7b4435ed153cdcccc4ff1d955e38d2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "4d085e7491bd95eda9478c6a11df9093ade14ee1eb4745272c4e7aeb77b29e25",
+    "init_qpos_sha256": "2a6203ab0353ee43d19c98271debcaee86308f6e147e6210e6ab69f5ae4ce278"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "074805fd0991cea5d118a12debc8909c9143c10c7ed6b6b4327909f068402814",
+    "init_qpos_sha256": "b3d81ee74568e1c5c4cf454bcfbf8536365eaacdebb0a6817fd176e8edfd2007"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "disassemble-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "b0665fa0c4432ed3b414d2a1eabfbf68ab5329406b6c6ae3a93b1541463e45a7",
+    "init_qpos_sha256": "4289e39f4589b6c663057df90df3f39380d5ff2a6a06e6d2e3b891828c86a383"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "dbdf9ee3bec6b6f6d46e78eaec111539048c8dfbe43e20caef02034063e85ec8",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "0da0718acc08772ca32464c5800969c2909fb8b9a1c581729d635b6cf8ead6e9",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "3510c87d2c0a57e1b092ebcc33b778eb761be17f723a30106b0c8c2c4a36bfc1",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "dfd09e42ddc174f2b9a5037d4c0bcec4e98b658df1e5be5672d6bd2fa0c78860",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "ef56c758c08593cc45ab880505adb9717b2c7cf33d5f8110caf778261ccd58f2",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "d3d74b937045302fa81c6c2b405b4619dd8d6be6f9f18e1547e304de163cc691",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "92d3a58f7a56774441febfadefefefae180cd0db78eec878deba17ef54d91658",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "c98fe8e17ff04a310556d9da3080832e18c34b3672dfcb07fb65027647457f9c",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "bc4fc525c012175794b064db62c2fe788c24c04501222d5e5dc20d67686adbe3",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-close-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "1e0fbd3ca9998f81571a15a0c3938a222b7f679e57f704a5513581123714c185",
+    "init_qpos_sha256": "12dce3fcecaa9e05558c84377a8945e5ad531b1ef015eb39f241e7d53b14ca37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "1435ebe202b98c278ad1594a2fe01d50c38a6d7c044a67eaa0d11783d9b710e2",
+    "init_qpos_sha256": "9c006489f81c2c73abcdb2de94dfd61ba081faaa642e8c42a2a9e4f20531abd9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "878f2384d2b7b57d7624781ab4e5d2313ba4235535a8dee31e36c2add278b341",
+    "init_qpos_sha256": "2a67a3d96b0ba095d73b9a1120a290828c971505b858a8d438a4594df7d92235"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "28bdffb32bec60a204c09920ba42f237d23be9f53a78fd8ca13ebff868cc1436",
+    "init_qpos_sha256": "6dc5040b2af0dce60a81f14c15147374395f13abf105f66fac2e17ae30e27ab4"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "331e8ac4d48277e3a80f03e9775bc2aa77f294e47e7fead5c514197aee4c3b2f",
+    "init_qpos_sha256": "2a67a3d96b0ba095d73b9a1120a290828c971505b858a8d438a4594df7d92235"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "554235f413dce8d576d9a9c0207e387ad5c7d9975aa2a85a2b1975820c7dc644",
+    "init_qpos_sha256": "0a502c1e27795b0288599433018b0f89d13710f838a1ee31caa2bff5d7cde999"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "7da03916f5f628a2ec95c80f30d7e3723423e1898882f32a2aa32cb0d388693e",
+    "init_qpos_sha256": "6781b5ff7fb172a010610e72955ca92f98dd9f6a13fdb97aede3acf9ee7df65f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "d45d15fd2d1f4f3542d743f40299e801a2353319433b1d4965a8c9fe3e0b666a",
+    "init_qpos_sha256": "2a67a3d96b0ba095d73b9a1120a290828c971505b858a8d438a4594df7d92235"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "f28571aed444142c8ce6c2187ce25244bbbff5973af99cd1ab5beb94a1808e8b",
+    "init_qpos_sha256": "2a67a3d96b0ba095d73b9a1120a290828c971505b858a8d438a4594df7d92235"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "2448ff7b8cc1f837b51f38b74ea35988fcd07ec987ce0289b78d49d6114c7da5",
+    "init_qpos_sha256": "2a67a3d96b0ba095d73b9a1120a290828c971505b858a8d438a4594df7d92235"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-lock-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "fee76ba2e1f88aa8ad2618c452bac1af9e27ecc3d2dcfa584d9eea8824cc66da",
+    "init_qpos_sha256": "8d26f9c86d3d4725c6947a5a7a4616a08087ea4f819d34ad98f097d960887141"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "dbdf9ee3bec6b6f6d46e78eaec111539048c8dfbe43e20caef02034063e85ec8",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "0da0718acc08772ca32464c5800969c2909fb8b9a1c581729d635b6cf8ead6e9",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "3510c87d2c0a57e1b092ebcc33b778eb761be17f723a30106b0c8c2c4a36bfc1",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "dfd09e42ddc174f2b9a5037d4c0bcec4e98b658df1e5be5672d6bd2fa0c78860",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "ef56c758c08593cc45ab880505adb9717b2c7cf33d5f8110caf778261ccd58f2",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "d3d74b937045302fa81c6c2b405b4619dd8d6be6f9f18e1547e304de163cc691",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "92d3a58f7a56774441febfadefefefae180cd0db78eec878deba17ef54d91658",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "c98fe8e17ff04a310556d9da3080832e18c34b3672dfcb07fb65027647457f9c",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "bc4fc525c012175794b064db62c2fe788c24c04501222d5e5dc20d67686adbe3",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-open-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "1e0fbd3ca9998f81571a15a0c3938a222b7f679e57f704a5513581123714c185",
+    "init_qpos_sha256": "2086224b0b9d26f8ccb6adfd540df28b27570b166c3374015318595cc598e068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "1435ebe202b98c278ad1594a2fe01d50c38a6d7c044a67eaa0d11783d9b710e2",
+    "init_qpos_sha256": "9c87497775f2184412a8eec51dc0953dd5bba0e157479444eb8bc5021fdd04d0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "878f2384d2b7b57d7624781ab4e5d2313ba4235535a8dee31e36c2add278b341",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "28bdffb32bec60a204c09920ba42f237d23be9f53a78fd8ca13ebff868cc1436",
+    "init_qpos_sha256": "611c157facd94dad714f36199dde90784108914c0e853ff9942f4171c7152500"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "331e8ac4d48277e3a80f03e9775bc2aa77f294e47e7fead5c514197aee4c3b2f",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "554235f413dce8d576d9a9c0207e387ad5c7d9975aa2a85a2b1975820c7dc644",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "7da03916f5f628a2ec95c80f30d7e3723423e1898882f32a2aa32cb0d388693e",
+    "init_qpos_sha256": "72f28cb9e7ded0b4796ce1e116fe7513c9b6ea1592a942edbb816ade573e71a2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "d45d15fd2d1f4f3542d743f40299e801a2353319433b1d4965a8c9fe3e0b666a",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "f28571aed444142c8ce6c2187ce25244bbbff5973af99cd1ab5beb94a1808e8b",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "2448ff7b8cc1f837b51f38b74ea35988fcd07ec987ce0289b78d49d6114c7da5",
+    "init_qpos_sha256": "7246d16643402ca4181d0f32f6d529918eb1a02e0e05a04fc4b39002de2bc2b0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "door-unlock-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "fee76ba2e1f88aa8ad2618c452bac1af9e27ecc3d2dcfa584d9eea8824cc66da",
+    "init_qpos_sha256": "26b30c6eac1ebfbc68c967c2ce9f5e4463ebd0226c2efb1181583d57af35985d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "587ae9f0c19268c2ca6f335dd01fba3bdddfd958d87a3cfc0c792928fee248bf",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "f49c0b0dd9c5362745ccb70f1e8b8a264615b155218f2d73220ae6f275996e9f",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "289045e843f7d91780d4ef33b0cb08804f84a28f140e9e20b2f6f157a8f2ca87",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "8e2c35385b8239ec7451c8d8fb1020021ba5f457259df05e88571b7b6990ded1",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "227edcee0eb071bf1b704c7aae3ff217c1911e9a77228a299c037a415ae2c9a0",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "042fd82746a2bd7be2f6b4d8fad9e061ecef77c0fc13ce4ac481e725ac0acc78",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "7f4d992c6a4a2be6f1f2af972bd5aee930203b4bca7c58196d6e4c56c8e5d0f0",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "7c286517b2aece9e7141437204d83cb45685395bc5bbf70fdab52f3481cef6b9",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "b8c92f836cb3a6a6bec8e5986a7a7493a213b51e0764c2282956f24d38d570a3",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-close-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "174cf66ff7f38d4b409c543456b4834a3ce08aeefe69622f0fd0615552439ef6",
+    "init_qpos_sha256": "58dbbd5dc6348c091789a61e002baa250d5e857e0aa560f1b1d5ec1120d95c40"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "587ae9f0c19268c2ca6f335dd01fba3bdddfd958d87a3cfc0c792928fee248bf",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "f49c0b0dd9c5362745ccb70f1e8b8a264615b155218f2d73220ae6f275996e9f",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "289045e843f7d91780d4ef33b0cb08804f84a28f140e9e20b2f6f157a8f2ca87",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "8e2c35385b8239ec7451c8d8fb1020021ba5f457259df05e88571b7b6990ded1",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "227edcee0eb071bf1b704c7aae3ff217c1911e9a77228a299c037a415ae2c9a0",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "042fd82746a2bd7be2f6b4d8fad9e061ecef77c0fc13ce4ac481e725ac0acc78",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "7f4d992c6a4a2be6f1f2af972bd5aee930203b4bca7c58196d6e4c56c8e5d0f0",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "7c286517b2aece9e7141437204d83cb45685395bc5bbf70fdab52f3481cef6b9",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "b8c92f836cb3a6a6bec8e5986a7a7493a213b51e0764c2282956f24d38d570a3",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "drawer-open-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "174cf66ff7f38d4b409c543456b4834a3ce08aeefe69622f0fd0615552439ef6",
+    "init_qpos_sha256": "68f2ad413631bcdc9d1b6920d92b9e0eb76d2f8ea9f9aa4dca5c644465038294"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "cbace42eac3e70dfc717f147e8381b9f511ec4f4d85931837ab77e10ff2a21d1",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "f93c727a31cf1f4ee71750478b3fe6e27af0d15ae3ab7d7e8536449fbc9692da",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "393d42b2f73fdc416eaa6e00a03244ed042193e57dd9ea974bee23879914a22d",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "a11953d267d47371cb3cf1fdf79040a78465e5a598173acdec5f618728190b45",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "d9f06eeb20012bf26ac97fb1918bac4845cd55b843f4eaa9f38c032a0d6687f5",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "45250f22191af9692f283d95d587544627fe8e8d826bf89e4abbec282c26fab3",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "05782e7891444f9ef86bbe8a3acc85e7e58e500282f511180aa41793bd89c261",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "5595bd66a74747bd10d4fe5cd15e19b0bf59a5cc3c054f102fb4a1abaf57269b",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "28afe3892748ceaea6b3a4f606a7767ead1143ecb68fefbcaafaaf60cb0650e4",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-close-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "ece393fcde095d9fd0bbd51d2591784e092e210ef61dde8e0138ff25e8e45b97",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "96ef3f89a3993bd8448ca7fa2e45d2f17952c79f94d58120daacf0fe17b97cb1",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "388af3373d530b6e7f18fddce11c1eb4b69baf8127c29ae9f48bcec311ad86e7",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "fa84dbe0676bd77f547b8c80942a6545d93b1b2e813a4a126c2792bcc61bdcba",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "5824c329785ddcf8f5e2a38d547093d8d9dc0ce79163c52d137638e99770d35d",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "0392d7f59476b8965e6ce14708d298d9d38011e349cc4d7b887cbbda74be6b1f",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "d3f6b06bb3cbde39e9236bdb81c4e4622b0d61aa3df4b984c57e5edf1ed31a5d",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "cb8658e5c439d45d368afb451f09a0eb2408ed4b1f20f7e561d0c09b14945369",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "5ced7c7054d2fb91c9fa8f639152d3a768596e28ea6cf4930476dc31c1eced19",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "044432ff9fae54fb0e47cb1f8836c23719667b1527c1d5ce3236d111434c12a3",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "faucet-open-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "b4589fd66ac00faabebfa6be510818fa20700a494d18d0fce40f70e6db7ef241",
+    "init_qpos_sha256": "bce8a1fbfc6845794ef67176a12ccc64e637a1e6fe42a8f1c510e6a22a466393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "e8e8bc341f4598319427b24f24da00931a2526a1c42fd22d6bcb3b36f29f636e",
+    "init_qpos_sha256": "2532e47592b7756abcec9f5314c2cb6f9a26ba4825a552e84c978c5e7326ca98"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "42cb0f3950731bde1b1677570d09ebe7c4a8b8c5277dc7180c49082983e899dc",
+    "init_qpos_sha256": "dbb95bd8d9d787d831ff86fc7f40b5deb0c1ecb577b0ace6242ac6ec19f29110"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "5fe82559dfafb3ba2b93438fd3c0486cc13bac1af7912047da49d478751a322c",
+    "init_qpos_sha256": "ea07b8c34e39644232be6f3ad02790da31008a8d4fe3a3c448f2ff3a66d7793f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "484ebf1301d685badb30dea8432290e50937223f68b7cd03d7f6264bf31edf1d",
+    "init_qpos_sha256": "086d3866e36020b22d807df349e88559745e26a62fa945256870c9995169e367"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "0e45c0b0f091ad4e28b45cab461b20db87894f940ba555d009381f9a7c6c58d5",
+    "init_qpos_sha256": "c9d46c47d6e9cec909a76051dd0784482231cc55f13e5ba48a6c6d950ec9f4fc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "cd44aaa53dbd1c9f5896ade230f29efbbd06161e9cfc98c1627ae4048d2eb313",
+    "init_qpos_sha256": "9cf6f9fed6168665b2366485e416e833c349c6fcf85eb64e642ff0c1628b209b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "46eb085bff7cb6afd4ea62e06b55136c0ba60a56eec55b3afa2a44769996a42f",
+    "init_qpos_sha256": "73769777802029c81dc2b912613f9bc955e184316279f0adea037932ef5c96b6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "bcca5f703e46372fdb31c3faae584ced477a11d683607cd5580f1d63cca5bd75",
+    "init_qpos_sha256": "bfbf7041004442d82f793feb00d3a807a183792a94278dd64f0e625bae3193c7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "611df975ac65cdfdcd99fbbcc3f3dad235020d2932bc98cbc926145ceb245d8d",
+    "init_qpos_sha256": "c380656a7a2791b3582a57bcf74d563a0d0d70547740adf2203b29acac85831a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hammer-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "57c9c5213f47d3781068003926c51fe45f72fbcad5fdcc926988af70329558a7",
+    "init_qpos_sha256": "226b2efeffb704b8ba1cecdcbc81a65e47fdd7efeab1503eeec1351e1db23ae9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "d7c53fd6ad2d605bc433af9b218dd02d427ba0225b7bfc7c1533b19792e23bc8",
+    "init_qpos_sha256": "8881758aa427ff2f427342fe6f5c98ce4c5961dde7a4d25b061f60db7b1e7b69"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "30e7fc7efef0671ec8305e3a102ff24dbcf72937cb6d4c4f33d70bdddcdab6c9",
+    "init_qpos_sha256": "b45b1bef61aecdbc39382fbb63d02d23e848e282d8709f91a05543ca175e14e0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "9d67de8e0ba234de883a5fcbc214dd577199637b43ecbbcd1c61c3e6dc5a1e06",
+    "init_qpos_sha256": "7bd5c58e2163b87758f7ccc22cabd98509b290f585532302fa7229f2be3153db"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "00e83e31150a78084a791252d56baac0b49e87cf4737fe4240d84b2bec608b00",
+    "init_qpos_sha256": "a965d6291e7bc1a18fb5572bce5fd69bdecc254483de40ac6e5eb0e1cfbb52f3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "3f60a309c37457a40ecfe62d6e35ad987eb68557ce1536640d37a41a6e62f23a",
+    "init_qpos_sha256": "1ad3026971c0f5d34554109568a3d3f416f029c664819816c6b0559a18425188"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "fd22e7f354dddf86aaaac2eec247fbc778ebdd1d2145d6a2816aa2e4df61f0a2",
+    "init_qpos_sha256": "45b23ae10e9ea866d4e1aa145e21bff0b02dfd74877d2f33f1afe8a52e6a77c5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "4aebac182f0211ef3d22dd303a518e592a18252e9e5a67b6b3de34ca26ef0415",
+    "init_qpos_sha256": "6b140373415ce7eb821bd8e64900ce1e9135dd7afeb7929b6080f000640f9efc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "a0bd080e4efeaafddf8d1b11388bd4fe8f167f0da29db649e05e6cacad5f26f8",
+    "init_qpos_sha256": "0ac8b417cd3de6c151273a4aa48ff6855f54699c79e841a84cac271a0daa74fa"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "1ee7d1c18d689f4b85eff9ae012cc4e2a908daf7929680661dae6bd47c0bc97f",
+    "init_qpos_sha256": "863efac0ff0603d6235ab9dd6312a2546fdb532f497010235b594a5130e2c1ed"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "hand-insert-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "31308fd275ba27eb116bfc604fb3a63491597a848c8f4f8358dfdc9dbfcbfb5d",
+    "init_qpos_sha256": "20826b75a5bc5b392eaa349547d6b3ef1b39abf458c0d44cdb8a14364e3eaa01"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "cf8a14fc1107a1f1c81bef10417bc0dae4d8cd35587febfb4f5fb306dbf1580f",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "cb65ad61c8a923473bc44a6537b3102c48ba4fe7fdd07529c8f25b29948ed247",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "d65b5eee0227b81f4c769676b9a509a33b35598b68866ab781deb607f05185ed",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "52112823c7e147ec458727fc94e2869f6cdc1d28f660a3741065703e34beff66",
+    "init_qpos_sha256": "f6af42815c71f1f40028872a296be9b18576318fb57e437cbb78b622cb6c26cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "0dadb9f48a34e68aaa6d5de9346ec20492bfe9a54a8a55c09df2591c1a46e4ed",
+    "init_qpos_sha256": "1e1d17c00d5cb995c4b199394b8ccb9e40c9fb93541c0796085cfb8668f8d369"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "1fa802c3318e5da600b5c36d42f7184a6cc84498e4ff7c434e80a34a2e46e712",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "e78beeeb879d391b5a489ef30ccafd24f39275535327b193a2bb898257fc030f",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "79b60eebb6acd1d637b01d2ac1c6fb67ef7b24cd73c9b5fa8742abcc09c5a842",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "25aafbc2fccbb57681d9bc8fb210bff522bd660f00b7a7448e3593a9b55bd99b",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-side-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "57fdf7b5f6f10e90757be3b87a3215c60389331ae63583a80da17b5bad0bcf36",
+    "init_qpos_sha256": "3f18b6f1862921721e19de2f3b61fb9a66d0ad9809fcea21409043fc360d18b3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "de0a48190f3c11371a90099130beabf8ca867f9dabb57b5346f5a7641d420a47",
+    "init_qpos_sha256": "c950a2cc7f84aa6a73c78218eebb4ede73eeaaec92e0fbe7c6cb9063a64c93fb"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "caa0b672a0878eef8fd3184121e94fc564a3de148833b6b7adc27818d9cb1ea2",
+    "init_qpos_sha256": "780d78833c7074ccad6d54146f0529a4100af61733b08e45806e21ce7a1825c3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "1678bd3d01fa3867fa08afc18abb497268ec8e313dc039b2c7d7639ec58842f5",
+    "init_qpos_sha256": "f3fc737e2e75fee6f4233fdae0e064b99d926abfc62a5917e5386579f7fbb77f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "6565f1905bea8d836c40d63bbff1eb7ca4fe4ffcfa8eb14064fba8f591bcebb3",
+    "init_qpos_sha256": "6173148022567a93f309d1fb1c46cec75eba1d772a243018893609a94610bfcc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "83ba05d6654d376618dec7fb47e336248545ab3e1deef8d4a6042c033165892f",
+    "init_qpos_sha256": "75a113dcecf211b62ca9e8e97048633ed1d2d82a7e70e07aa668d074f05cb3f0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "3dd424eceb20288ed0009b291c139710cc82fe160196128ad3e07e23a01ddaa8",
+    "init_qpos_sha256": "bc9463e6a9904bc2e8960fd9f7bf3d4337fefc95501947756ab9f63d7290679e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "0d3d0d4da27c72b15437ae12fe33ad4e303746a5cb8251917593ae194d3fde12",
+    "init_qpos_sha256": "43a9aafb5ba5d07e5cee1d933cda9200699ab92ac01732f5061338272063fdc9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "499ee836be06c0128d7d56a5a47470d03461fbaa496028c40759724004a8d849",
+    "init_qpos_sha256": "39ac513a9a117cc2fffecdaac8e0516c15a737b2e602692ea0a84668e8924d20"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c285f709404ea4370e1faec015c1690ac083cdc69efc6e551c2550d956e727aa",
+    "init_qpos_sha256": "291bc0e2b2d14c680e6e299bc9274ac8bfd5efaebac889e8b38615a129f49e7b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-press-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "34cf3125a02f4397893d2ad5e74aefbe80dec87a207d61750deea4ca303430bd",
+    "init_qpos_sha256": "47c2f23e0322eaa374bf60502db218ff25f96ceff7058221b360175602177e15"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "821e07482c216104129fa939973de4217a3b952041841eeff36a118eca14cdc9",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "f5443ad0fad1773c348d26e9f6ae2c5e5e737bc9cdf6d294ec7b37ae8f2725f7",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "5d4ee127e3a39593cfef17613436447b77c6b0c198721945c0d074a8fe5cfb40",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "8a0fb93793510a18a06d5fc8c1a0ed645f74f0a3d8722d4b99bcd673a60d70d7",
+    "init_qpos_sha256": "63c51849d1bed856dc42fa47db95a8ffb9f54e26cb84042062d037ce543accfc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "36b8e86e8578c5fdb31624ee4fd2b040a1a6e1b0feb8caa5084166e070f4f030",
+    "init_qpos_sha256": "ad61fbc63aa9809a48f1f162f0a61fbad1f45965b45add7f2b8bcf5dae4ab02b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "1e5411052ac5463988a9d3a032ab94de7dc9c37fb82ba4f43bf013582e81a4c2",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "7836bbe2f2fd5fcea13901b3de7da87dafb123fabb2706c9d2c1034fd68685eb",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "63a5a5b655ca4e59b3b84080f2d20d834b7e3e396adae23a882804be3f955ca3",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "76386a0dbc6ef1ada665327788bc8f4a85ca421a8e0150af03f5db85b7d3af3c",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-side-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "c93bd4fb9cf18b4bd61959a2f6b6e7a5b9f17493182729845cb085be8c5fa72a",
+    "init_qpos_sha256": "0d22e1578aee9fe94e8af25e8a49499d628e8ddc692be5d77c90bbfca48f6d2a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "de0a48190f3c11371a90099130beabf8ca867f9dabb57b5346f5a7641d420a47",
+    "init_qpos_sha256": "6fe411b43cd2e2ed846239010a215fd194766107cb07a51ac5f8990ffbf18e07"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "caa0b672a0878eef8fd3184121e94fc564a3de148833b6b7adc27818d9cb1ea2",
+    "init_qpos_sha256": "b5bf4383a8a2d61c1b37b954debc1c9f570fdf442f13da423435f024db8ae80c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "1678bd3d01fa3867fa08afc18abb497268ec8e313dc039b2c7d7639ec58842f5",
+    "init_qpos_sha256": "91d62b7130ebb57cd23614f82d0dca22bc0bcdfb6d8d27c4bb5ccfcf0edb95a0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "6565f1905bea8d836c40d63bbff1eb7ca4fe4ffcfa8eb14064fba8f591bcebb3",
+    "init_qpos_sha256": "fadaaea0e41dfa22170d9364deb89f778354d117f9361e82b8dcf869ddc0be23"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "83ba05d6654d376618dec7fb47e336248545ab3e1deef8d4a6042c033165892f",
+    "init_qpos_sha256": "8f407dab413d51f0027370154a604cf2b005b62da6080c682c2fd6175192ec98"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "3dd424eceb20288ed0009b291c139710cc82fe160196128ad3e07e23a01ddaa8",
+    "init_qpos_sha256": "1ba5176d61b8e107e923546059b120d8b8c7b9cc9720276eeb7e17489e71b00d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "0d3d0d4da27c72b15437ae12fe33ad4e303746a5cb8251917593ae194d3fde12",
+    "init_qpos_sha256": "362d6cfb881dd4199ac57f99412614b8da0568f8802122bb9b1cbfdd6a99ade3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "499ee836be06c0128d7d56a5a47470d03461fbaa496028c40759724004a8d849",
+    "init_qpos_sha256": "42c712c20a69248df07d9bade6e5e95901acf5afbef249e47ec402a4f930e13a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c285f709404ea4370e1faec015c1690ac083cdc69efc6e551c2550d956e727aa",
+    "init_qpos_sha256": "4fcfa7e038833074a6dc42a8adea0e3f9c9efdceda601d4a177d339692e1cea2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "handle-pull-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "34cf3125a02f4397893d2ad5e74aefbe80dec87a207d61750deea4ca303430bd",
+    "init_qpos_sha256": "b64b3709f295c520ce379044ae6facef2d43afb733d0477ec5cc90bc2f18d5cb"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "0bf4ff49cddc60bdcba2b0f951d461cbc63908791b6a4390ee65181a4ad8d8c0",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "39f18fa9f44b1d0f8e501988025390e088610fbffe37523c29b6f923a547e495",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "e73f86714b5e33e576b3b41ed7027f2bfaec8054195086c688d9d8e0aa93ba6b",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "e82297f8b716b2d333dee2bdb13a6ccf67011003e0b892740d49cfdd6db64607",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "8308f42ab52a1106e6320992fd43141370487fd23190698b8932a3a8b6fd3969",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "aefc581baa30d069c2a3738fdbf1b847f951d4ee82ec9066695fa4f0ced1b0b7",
+    "init_qpos_sha256": "8e1c3803fba534a0293e9c6457d7a9d14b54970e12d25136d7d4ba39331f6ba6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "bd2a3eb388919e0ff880694e537eb1acb4bc4e608cd837fd87a4fd3b1a84fa53",
+    "init_qpos_sha256": "8e1c3803fba534a0293e9c6457d7a9d14b54970e12d25136d7d4ba39331f6ba6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "e6ec5a271ea9c2eae663bd5504ca46a1856b65a36118334943d67bc3a51c54af",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "4ecb35c1934e556525d03996ce1899749085b88d3330f67838ae1d972eedbdd2",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "lever-pull-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "b61f4d7bb076cd67317502ec1e0531419f378d4c8feae0ddeac6b7048be52053",
+    "init_qpos_sha256": "0d458e227b06dd1bb6a2438e2907b360188e02c93ec79c65613781908b68a116"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "2996d015be17eb78610869ff7e590e859d70c42949a137f04323a41b7e4fbf6d",
+    "init_qpos_sha256": "002a1880d25c7f4b067aa0ed1b6faa42241852641e3ff73909a574270b4b513b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "2d4d601c9559d454efb6f51ef137e952a9d31dcf6847e35158442ba738ebd33b",
+    "init_qpos_sha256": "55b3261f2d3eefe1be160096c26c7506847cc95bca49411d7733ae2f70846d9d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "8c13796a185d6f61af447335845806b0af4012c41ad90c39d8e60cc74d09a2f9",
+    "init_qpos_sha256": "ce1d3e5d37fb903402ece888799ae3af1737be443c5c50aa43dfcb62832f8961"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "9ac5eb2c8bde6f8cb53b11ad86ca37264d3d9bad05ea1d923cfe00412ce5e390",
+    "init_qpos_sha256": "1b234fb378452a794b62b7cbc654cf2772dacb35a27dd6e2dfde301adb590b60"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "338f4599adbec7fc7d0d3f54a2c92bfada86866e807a449fe93059aebba8bf63",
+    "init_qpos_sha256": "cff735e26e514232f7f782bb775203a83c569fd1c9e6f8e557eca79403b563db"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "20a747e95124c457afc08a0eb73a849202fa4307a342a5457c3e7c867084b04b",
+    "init_qpos_sha256": "56dca3996b61fcebc5006da74a0a6ead7551a25b54055872683a95799580eb23"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "5fbb9f3136d01182654ba67fb76d6f164962162ace3849808040626c7b3256b2",
+    "init_qpos_sha256": "1bd3aa281617acb037cae39d147a6f4a0063381883e61cbd801b9b2192a85b76"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "5b878a0279ecd31d810f400df1d4b33802e52438508cf345ba828a4f37cb5264",
+    "init_qpos_sha256": "2113ad7c44e155f8a3c5c0a5198d08208d95411f133406df2a241c1a6d5aab4e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "6eb78a40231d0690e7d3541565f7132a027228a4b3e038d17997b7490f927cc3",
+    "init_qpos_sha256": "4d9a81a694de93ae01de98c7bdda702d39a209791c31be48aaf020ae20cbd53a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-insert-side-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "60c5a571dc207e9210eed76c76742e749de0c3f01ef18ab6b77155f45171b42f",
+    "init_qpos_sha256": "b10fb8ef3712eba1534e3fab6a3d094c76f70d87c8c4ef7eb3095349a3c58a8e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "9cd4c0c51476839dd0d1d4c01e61a943e0c2d2d705203c5510b6da82f31dd6ce",
+    "init_qpos_sha256": "dca2cbd242a7992fc4d49f5cee0f29a6b59d28a6c2b06a8ac02fef72dc9bdc51"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "7dbce916336fa9e8c716a4c231d1d7007efef7dcbfb674a81a14d919eec5e053",
+    "init_qpos_sha256": "9a3f3527978d46065c8375d91f64ce54391b122192682f45ff152624874d6343"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "156520061d7627a31fb59015d47b7a6983190fb8567d6d329e1081c925752435",
+    "init_qpos_sha256": "d9c185e7bc1344d0386c2dc9cb13bbf4da648a4dc005fcb6aaf51adcf5770230"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "aae51d5063b293c3b64612e02b84d87999628dcf29eb3c7f2cd34b931077eb2d",
+    "init_qpos_sha256": "29416a0f8be46d7d191c12f95fa7b37c0118958ff6f720078e200212d24c38bf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "9beddaa37cc670946b7c3d237d4db56e7d4a772a8ddad3357b3829e981706a5c",
+    "init_qpos_sha256": "0aeeab02b263ce2d25c004515ef64125f96774b357fff05ebb82e7b2a552f25e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "d18561b9bb5a4bc0ae73048befa318140721b9dec846cfec672c67c66a0971da",
+    "init_qpos_sha256": "4539e9398c02236097e9702166a0d25dd272fa2376c32095a00272d631b349e7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "01ae20111a1ff38cdb4fefa4225c2d36ab185450c844b11e53b530f1abfb700a",
+    "init_qpos_sha256": "dfb6aeb39f869af7d1d7bbaf1c1c8e0d3bb8bd767afaf1ec05c800ba21c343f8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "6ea56c7948831c5e6b8a340ed07dce71e1897b4d2576475255af32d291a80719",
+    "init_qpos_sha256": "4ebab16a68659c293cd0b1d74b1f12c81ab9bf696aabec848d75804b3ca25165"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "75afbbd3ab0b9ae1b688e47592a30e86d35024446895f6edcc39d53afc00aca5",
+    "init_qpos_sha256": "172d66dfbbf6e5ea99df2c04e181a2001f5d15e25a67f70d6c86a3c773630fc7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "peg-unplug-side-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "acd151192c0b583e70b1df3a7816d3e398c9e7c60221411520ca4bcf699b0e80",
+    "init_qpos_sha256": "8b336bfec2fc7a3dc0f530cc29db3d0c2be39311497ed20cc40df32e28fcc6e9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "7e38cb9042cde9645ca5e32f5b1a8c4bdcdd6d1bcf3f3a8a734a05260710e78d",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "66ed33e94159c0987e544c2a42a846dab09441737b3726d69c2105f42d55af69",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "7d446b5f90285392d78ca559df7c1e49880d8308150b8399bae885719f00ed31",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "3f795562661930a143f9befd27038d9e2bc1cf36814b89bfa38580811cff5662",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "0d39c8799288b18e67aee56115f9ea73bda36ae342d5e6e41ecd434d34efbd5d",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "293c6d234ea7a7323fafba49bec052615c07906a9682b2c191dc78a283715353",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "395c51de21d57c79e1a23cfeeb9332cd7c35ca844b3f9e796c244d31a4f062cc",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "9e90bdd0f3df621248d011d7b956d800028a39d981bf7d7db6e5ad2e26fd0b08",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "67194e28fd638fde0205d71b7fc1aab7303ec3dd7890d64d54614cc9d5d37de5",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-out-of-hole-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "0c1cb8418c9cba85131d32ca54880910e9d2fc620c7a4236d67077e3448ae64f",
+    "init_qpos_sha256": "a40126f10dd0cffa88c6ed2aefebbaea4def6c9bfc135888fa9c5f32ec7ddc53"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "8b80dc37d5ba39c7db34496dabd0114aec7e900bd943d931868f07eb664ffa62",
+    "init_qpos_sha256": "3fa641e108bc194fc6d059126d3f10ac5ef3ceec9847189f6fc1253623c12cfa"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "7a5404970508d19fec185565420ea9614937f0e0477bb7a7249ae689615203a0",
+    "init_qpos_sha256": "116c20a94cdfadcccdea256be3242affe8f350662782ee08bab4ed970e522846"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "feefac136f6c85f73f78f8d01e759ce713864f7e6d1af5e81b583ad0a796ae04",
+    "init_qpos_sha256": "b0ababc57d558cb0d92b0946c8d9ec3ccf97f33bbec634df3b8cef32854b1bed"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "0e8dc2b1f72453eb7b13331c28f1b285b130dd3e89f7c4caecf8230d9526a25d",
+    "init_qpos_sha256": "2544b3a2852112d24acc27487d5f625f5c70399b8755fd1da844624dd0ddb28c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "968e05154bc5cd36a32baef24a4c66c30b71dc330aa053edc1b8317094653777",
+    "init_qpos_sha256": "38a48c0976b2c7480214ced3dcc5c32a3fb7a319845ec936a1f6a40884c3b58c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "0ef8a5217aa5287b2f9219085c54f122c2299519753b7f44a266b6a2afe2792d",
+    "init_qpos_sha256": "7651b1ce62c765b1663b9e2f7c74a8c3629d77a7b531bdaaa011884b35846c97"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "30212dce6558cb1b8384fee99c2c1753893d0028ac69d0d5fee3e40aba865114",
+    "init_qpos_sha256": "c949ae2d7a3b2b4b1511d7843a21b2549dce0c2d928832e623ad96773093fb02"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "eaee603c6539e7f4057763062a308ad57e89bd5114f003de39946d8be573a0d2",
+    "init_qpos_sha256": "975b6119644bd647cf221f4b07776f49565ebe9f5de6c2f594982f93ace3d9d6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "6bbf713a2af881fef83edd62ffdbc9503e5bc249741199249f576c4c50185ff7",
+    "init_qpos_sha256": "33b7c1323f6d117dc16c9418a456daec565628b030126ff3649d113d0cc15062"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "9272bcb7194f844c23751cf98f6c9e4a5292716388d24102094812ef0c0cb116",
+    "init_qpos_sha256": "cae58a664ca0217997be262c5cc174650b14c47090ff9cbd43f3dd95dd853ff1"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "52f4bb723d8063dd3db9ea97023c2b03ebda742c7aef9596112a4ac099c83ca2",
+    "init_qpos_sha256": "6baabc23dc9be7213e8cd8e790548e82fe2d5c5b8a5236575352f7c22adbdec9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "5ce1b9bef25c1dec6731ac53fac31ec2c3bccdab35c77a9f2f5f9d43f8623edc",
+    "init_qpos_sha256": "21d9d8c69e9f7a7571517d15ebcbb10af917e417c9055565eeeb3327b23201fb"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "87f8b0f7fdd93eaf4c13f42cfac2587f352de42bf6ccb5888d26dec431cda4af",
+    "init_qpos_sha256": "3e22bd39df8934588ca21a4ebdd79b56713e0d8dc75b2813f8b456876d82785a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "802848c877eeaf395579244871f70d0120ee7258bd6a28471597ef09140d111e",
+    "init_qpos_sha256": "8bafb5ac4455020b97eaf8a9b9ae8814d20c4204702a44305ae59c2f64b533e0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "0949609232d4704390a5b32cb7a88b51ce3248e2d713520fac593b5ff6c5b0f1",
+    "init_qpos_sha256": "8a617188e787198baa77db50758c79343924cc433b28b938364b850bf81896b2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "e00a92574659725a8a660bd8ad1eec56ab34066ceb279b5699d4bf5cc0233eda",
+    "init_qpos_sha256": "e865b22f8284956d18995a00fb8e1f66494a90ad21cf8eaf6eff0ce3eaa17431"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "8f92214e3f75d57de5b7e8c56dfefe2bd89aededc56484fb1328379c5865c081",
+    "init_qpos_sha256": "d02327a65a4cef4f749158d8afa4af70da0cffe684813de5ef9f2833e27dd3ac"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "9afbb63b1f7e2bffa254f5a4a4846267c376e9c7df1ea6527d0f33256ad9f1da",
+    "init_qpos_sha256": "77373db6b134deabf10e2a14b8efcab69c1de42d7f3d2aec2cc4c94b8b20a87f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c44b15a6936a32d8490ec68c23e6902140e2862d4f7fb833a0ddbc38d150863b",
+    "init_qpos_sha256": "d67f236b5005476b3ac244a2c71e82945769dad9aea1a852f8b41ef244fcb75d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "pick-place-wall-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "a83d5e90c865b0265cf47fc2d276db89d694f791ebcf9220e721694df39c8f21",
+    "init_qpos_sha256": "a09888c6974bb31e5a3f1a8c25fd8e42c418acfc338d948186d643a8ff828899"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "d4d2f627e015049df3d20cfab715720247f2783ece9c3006635b9f01a925388c",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "fc61ef8ed9571c350f2754cac8d99274e9e24e965b68d052a83873a8998c6a26",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "cbcaba0df45a6de52d7b20cacb696338dd3c9815a88ed86006aa3010f5f3ca89",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "585a196179d158fe3c326844f6989b6e0a6ffb8b2d26ba3d7d90765726a18373",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "8d93180d5168a83b951847f8d1949774b2bced2d66404b7fac6020a0a0144868",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "c47bdc51037ebb6b6a07c700a7f31f82de18c2649f019e5741899576b90735bf",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "f2f39a0c7a07f857ffc97a5cd5d011b352558474c3e8af03e7fba3000d9ac9f7",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "26f599c9836c401b51862ca28dccc9b281bdaa68ad993014cf14cbbd6fe7272f",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "ed48729504103b8cf24f9335a549f1ebddb0039af00968cdd5dbf3e724f2035c",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-side-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "b319b2dfb90329550be41c3192dc39b8915cf3c635a31898f4f7779f8856b9bd",
+    "init_qpos_sha256": "703151a37f919badf1158537eac3486ad50003506cf8fc15341fd6d892038586"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "20aa68d2daafaa45d13c5403b5edac3c70c37412338fe4a5418329d22dc8a683",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "073fbc65cbdb67848cdc4c01e77f910cf0f1c920443e5167af2e2b912e5af362",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "0119633d65a5fbf11239b4b4ff1b3650897b44de99bbfbdacc0fd971458c8ba6",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "79ae87f0084202a4c24fdf1f4d1723a4254b9cb737811154f6b24c7fbca45483",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "e312558d1d385eea1b53fdba10b2918228d2ea647787a8b98dac7ea987525457",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "255c19d1040f8b257d737064194fb4221084c9b0a4e3771f740118a1b7be8e0b",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "1e4a1cac26de7e9f107ba96059ba98e56911893904a3fba13d6f36697c9596a4",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "a9f4a0be27e08b574310641d843a4eaf34225410a5588dd00964854641215cc2",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c945c907c3f506f1c2f36c048462634c4c2d0f22935a38a0d25aa9aae6a47321",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-back-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "7633c8d38d2d60b849b18e8d54b108abba20c5b7c66cd8f7ae7948397ba4030d",
+    "init_qpos_sha256": "58d9204a44f282a3d85e93c75ddfc3999586a330688df9eb8b2662b61cfb1d71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "c3b2df4aa159ae641cffd82e0ace0ee644fb75a4a3d6285c0f390d71211eddfb",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "e1b195b39347f61170ea6493864335525c4ae41450556523d7106556209c6288",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "32fa7df59f121d57022952ed9476b11cafa782516dd1bc9f9b87a7834f3f7bb6",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "b9f3570a0b6862fcdd90fbbbcf19b8d898815b7106760875f2a69329dd1b03a1",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "42e6f0aa4a86b970074d41a0bff9f5c6f06cc21c6a7093585ed1d523d7a0baa5",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "4c2fdcc6c62e0ac7070a650d53d0bf5413d88cc4a45733075a6840cd6047a86e",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "21fe33d0871b12ff121e6a02535150d882d6d164e1410a3de3976a04e17dacf5",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "dfe4b87d9acae8813ca3314609d6f60ac0230083e52fb3f403ea8337db2d49c6",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "173b3786a8561f56b989ca6d748fdf2c3c1614fb59a088d42db4b077bf6dd0d5",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-side-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "6b5e3d18b160d3c7228314a1da47c5c9b8e3213174d2b735344c91dc64eb33fd",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "c570311e12ee7ccbb4b647f638dd89eb6b3cc13907ed55358fed8ba8a34182a0",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "7b684f14861e5e75fe418614906460866ab895cdf4aed6e36fad228500fe0d3d",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "ab42e599290fb5dbae45a02404486224eee3d5aa621cd8cd76b777111308c021",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "36bbe68c1e21c44edde917c458bfbe3519a6f202ef29435e5a84e2fa8d82e5b1",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "1cf0d869bbfcac6c17ce2c655505539a63b4fdff0c763d70b98638c0216d29a8",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "f2f3a7e643e81ac4cb6b0d6bc6595d4869a7037c7ead4835177f25812ed8ea60",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "f84ade963f2284ec33b4f2660675f0c5830b57649239a1f5181fa7bf3e179da2",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "79b2f8dae991e04f0f87fd46767e924dcc4e12ab42bb5696cff4fd421418f556",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "9e7b0c8ed0b60b5e12c26a81520e18fb3fc26485d1502cae32ec9629e7c69802",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "plate-slide-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "c268ea12eb0aeb4830044f3a865402af62ed3a11711eb116ff34d1d99cba767c",
+    "init_qpos_sha256": "d4bd61736b46e2882f28a2f71d986a94833b75f370a8c486f2cc55ec822df4cf"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "d09b98ca351c7dc83df9322eae56d5631ee0b2a31ed4200087f070a4a5323bed",
+    "init_qpos_sha256": "1e8e778c833f004041bbd12b82c374e4aeb5bea352bdf8ae3cb596a3251fcd4a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "eff06820a4fa6f34659e49df85787c5fc98fc9e08d845d3ef9840938a9e7f87c",
+    "init_qpos_sha256": "c7f4e4778c1cef87f05a9cf6da6c6603319dec990d8253cdcfdabd5e5f4428bd"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "e86f1d0900526f6fd8578faea66ac81bb10c656fdca6a6eeac77f3df8a58889a",
+    "init_qpos_sha256": "f68bd41f8a27d8f85226dcbc7e3276aa9c5b0a84544563f9bd476d8797ff0702"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "75e234879c057dceda0853485ee428b597d5309ac6fdd180d0a5f178082c0efd",
+    "init_qpos_sha256": "793458b850b9f3d3818100804696f8189b422f4a8bec0fba91597d0a394139f6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "4078723706b6df00a918dcdbc9a7e16530f4f1b2bad83d8384476d116e404faa",
+    "init_qpos_sha256": "68dc61475978116c71b4170c59c48b6531ef0cd415549e938f9b7244ab7efc14"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "a0317799c42f459116bc31098e8a49aa46f2a0ca5cd9d09113467f15059a120d",
+    "init_qpos_sha256": "625502eabbf3d04694348f3c7e9a168acfb749fa7f12a83515d1dc23bb0ae7c0"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "250a8ae6a4f32b6a18f6a905e059b4c92989712a786cfd3f8d909b872bc604a4",
+    "init_qpos_sha256": "554fa70afcee4700d0131f7b125a13155aeb94b96757716822b91f7303781a8f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "79171639ca9c60e75b62b849a1ac03b6bc73ae2e75c194259417f3bf8484bb27",
+    "init_qpos_sha256": "dbdf6f1d62e400b523c2ed52be7e3cc4694ab5228bf7df26259c250ddf3e26c5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "3cabe8865e3b2d66feb228101265800e2b5f9433fa9cb7eb5ae3dd41701c2c53",
+    "init_qpos_sha256": "aab53f1e5524c5065bc1d058edaa4ee50033a5b3e9d048d4e001d156b3adb5da"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-back-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "d0096096752709ab730d40eee6c55ad19086c20128794b2058ffa2016e25be36",
+    "init_qpos_sha256": "1495ea764b8f8a0feee51d7c4ff45d06d9c30983f961fac2c8eb3b6ed5d56150"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "b98516c1d1641458f15dd5525cd52e9deb160886a0a404bf8e3da199117c5756",
+    "init_qpos_sha256": "81bc8e7c843fb478650d8707651205ad62f0e2193dee9e2626e3f176d8eb6538"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "c9bde485dabb08c61f02077cf98f0eca8a3ec30682498495df1dc08286f46726",
+    "init_qpos_sha256": "ecbc26b90659d6bfa54a8224f32136498a3fad09cea16de9b846348eea4239ee"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "1b177ded825b361f7b1042ac620395ff520c0c254cd818585a92ef5a5358489a",
+    "init_qpos_sha256": "0fc44162ce4cfbda46e3ff167a988ecee3426f7b874e83db4c2b6aa788078b0b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "d306012ae278842d6ebfbe555b9ffc08ebc689a08ec215f8f0f700302990a708",
+    "init_qpos_sha256": "561f8ae05f82d20cc2bd1b020ef8bc25dcd36889c2690a8e0f1e52719e6fa56c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "af9de13af73dae6a44003000a4f6bcabb8687b070851d807ca3b3e3affa1f42f",
+    "init_qpos_sha256": "3ca79722daacd19bfa974ae5e8b1e0fa41bfc63f2a1ed1842c1a1428779b4c86"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "ad8ed735cdc6f2d0d283730d9c80f0ed513503e622dcba40f1f127f67859e165",
+    "init_qpos_sha256": "dc0dde41d793be15fbb91782e74a0dff5fc8e1f0266f03f557c315af6fb9ef4b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "009a27495ccae7661755968b867a04cc6ad0d584cd49b2b5dc093955274639cc",
+    "init_qpos_sha256": "0cb0ca25e0a45c712942f29ba4b2ae1680e5045f3269593da73141185e2b91a2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "aa7e2139f7c41ac4ceae28610210389692b38b3b2192f7963096dc2b9a9264ba",
+    "init_qpos_sha256": "63c0b31d0c1defec62c739bf8618035c80f1b6b45212a6fe4f4c8ae91d18d068"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "51aa18b56cd37a2e95803e841422e5d280e2bfd9e1bd035cfa2f79250d4e66a0",
+    "init_qpos_sha256": "b2ebba61c9c3c1e2c4e92b1f0a29f7817e4aaea51f5ae5b69b3d9dea90489716"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "6347a1aafbd5b808c6876712e3b87d44a5e114fd5a5eca2a779594db03630266",
+    "init_qpos_sha256": "98f187e48cd8ed08e634a7e4e9a43177e9ec0d1b8c807106a3d27affa6f87a1a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "8ee3ec501150d136561c333f5e72cdcaad2590c6e92e8a02b3f054fb4e5e4f12",
+    "init_qpos_sha256": "3ac7a89be7d9129134a290aff79856b56c4819502c66158ff9893fffa92f355b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "fbe61cc0935fd1bf974627338ef7725dba598abbe31f018588ca5750c6810618",
+    "init_qpos_sha256": "352dc24f4e32ae9c62f17ab9d44a19d2e247a28247804a56ef81e079f96119aa"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "2561972fab57c3a3fdaf82083e507df76ba9d39184cbe8a2fc337f8c5c00c21c",
+    "init_qpos_sha256": "f05fc2f66c184fbf4c20d8c651bbbbc98632ce4b83a0d9b317c9e223fd40e6c4"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "936215d98d5d29542292cb6e0bc3a995149a7df45949e2425d4c713ccaf4a74f",
+    "init_qpos_sha256": "925ecaeb6422d7d53ffdb73b9eba11f36e5fc5dcf0ce016dde6166bd649ca121"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "75cf66edc7b11af0b698b5868de90877afffa82c29c1c16359de4724be1265e2",
+    "init_qpos_sha256": "1f027d8c629ede567fa7902c355ff5bb4dd33dc661451e04e5b28e80f6c29fc2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "6fc41d6c25fbe10308ce006822dc8f9afb1559b6085cf5b3a600976c093ad16e",
+    "init_qpos_sha256": "d55bca2a196092539cfc1a39e56d4c6cb4b50e608ca14375311c05db0262fabc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "4c08e148b556c0f3ba586bc9abe5ee8939768252ca9cf9f1fd3fcf8e481f4802",
+    "init_qpos_sha256": "806af8a503f45ab2308c603944b87b2b12155cd23c6f5d0d645158d812157a79"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "704bec881c9084d75b43edbec4488a8aa77c6f0b134e08ed541cecaadf5fbf81",
+    "init_qpos_sha256": "16cda86abc6b12880073949feb2410524aa713537c21d47a5c6336ca9094fc71"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "3031a17c98b20c6122a7195ed477b0fed51c2cc917c81d747d9bca53192b07e9",
+    "init_qpos_sha256": "ef3d8e62fd0759c49a71c9a41e53d7a45b3b9b33324337fdb91d5df808580fcb"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "push-wall-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "e820daa1236a948c0a27bbea010a2b1586878cd1f36c334f6e3d04c9109e5986",
+    "init_qpos_sha256": "7277bbdd3d9a4f1292f535caba62c81d34fdfce319f543bfc87937dc5775a2a5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "8b80dc37d5ba39c7db34496dabd0114aec7e900bd943d931868f07eb664ffa62",
+    "init_qpos_sha256": "3fa641e108bc194fc6d059126d3f10ac5ef3ceec9847189f6fc1253623c12cfa"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "7a5404970508d19fec185565420ea9614937f0e0477bb7a7249ae689615203a0",
+    "init_qpos_sha256": "116c20a94cdfadcccdea256be3242affe8f350662782ee08bab4ed970e522846"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "feefac136f6c85f73f78f8d01e759ce713864f7e6d1af5e81b583ad0a796ae04",
+    "init_qpos_sha256": "b0ababc57d558cb0d92b0946c8d9ec3ccf97f33bbec634df3b8cef32854b1bed"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "0e8dc2b1f72453eb7b13331c28f1b285b130dd3e89f7c4caecf8230d9526a25d",
+    "init_qpos_sha256": "2544b3a2852112d24acc27487d5f625f5c70399b8755fd1da844624dd0ddb28c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "968e05154bc5cd36a32baef24a4c66c30b71dc330aa053edc1b8317094653777",
+    "init_qpos_sha256": "38a48c0976b2c7480214ced3dcc5c32a3fb7a319845ec936a1f6a40884c3b58c"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "0ef8a5217aa5287b2f9219085c54f122c2299519753b7f44a266b6a2afe2792d",
+    "init_qpos_sha256": "7651b1ce62c765b1663b9e2f7c74a8c3629d77a7b531bdaaa011884b35846c97"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "30212dce6558cb1b8384fee99c2c1753893d0028ac69d0d5fee3e40aba865114",
+    "init_qpos_sha256": "c949ae2d7a3b2b4b1511d7843a21b2549dce0c2d928832e623ad96773093fb02"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "eaee603c6539e7f4057763062a308ad57e89bd5114f003de39946d8be573a0d2",
+    "init_qpos_sha256": "975b6119644bd647cf221f4b07776f49565ebe9f5de6c2f594982f93ace3d9d6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "6bbf713a2af881fef83edd62ffdbc9503e5bc249741199249f576c4c50185ff7",
+    "init_qpos_sha256": "33b7c1323f6d117dc16c9418a456daec565628b030126ff3649d113d0cc15062"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "9272bcb7194f844c23751cf98f6c9e4a5292716388d24102094812ef0c0cb116",
+    "init_qpos_sha256": "cae58a664ca0217997be262c5cc174650b14c47090ff9cbd43f3dd95dd853ff1"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "52f4bb723d8063dd3db9ea97023c2b03ebda742c7aef9596112a4ac099c83ca2",
+    "init_qpos_sha256": "3b11838aaea69131ed2b632ab8fe09b82f13dbfbf3292cf33d03dfe11ca8c2d9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "5ce1b9bef25c1dec6731ac53fac31ec2c3bccdab35c77a9f2f5f9d43f8623edc",
+    "init_qpos_sha256": "dea7016b32226e77246c60ed725e368e3a3ca833c8c269a31082abfd0cfbcc7b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "87f8b0f7fdd93eaf4c13f42cfac2587f352de42bf6ccb5888d26dec431cda4af",
+    "init_qpos_sha256": "741172b8009bb8b3a8534d2d1649f190ab549ff53b4b7f0521f3ebc523b0a6d2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "802848c877eeaf395579244871f70d0120ee7258bd6a28471597ef09140d111e",
+    "init_qpos_sha256": "f3355f7504d9c510546b679f6dbd577defc3239d47dde08f209c0febd9f9f0b8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "0949609232d4704390a5b32cb7a88b51ce3248e2d713520fac593b5ff6c5b0f1",
+    "init_qpos_sha256": "37c0f7e78c784d29492d8ab4e86477336c78e02473f326717d0bc2d7fdc59fc3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "e00a92574659725a8a660bd8ad1eec56ab34066ceb279b5699d4bf5cc0233eda",
+    "init_qpos_sha256": "ec4f613ac6dbc7ae15336471cff4251730ac940b4561351c5ef1f46fc38a9393"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "8f92214e3f75d57de5b7e8c56dfefe2bd89aededc56484fb1328379c5865c081",
+    "init_qpos_sha256": "e3e416d4a97b07477a8660e5cd7d79767dc1c7ad263d83af7125b98f08d57e46"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "9afbb63b1f7e2bffa254f5a4a4846267c376e9c7df1ea6527d0f33256ad9f1da",
+    "init_qpos_sha256": "62f682b5ea4c2d2732ed5e0f5feb383963ef639aa45cb51f572d5d2c4837a687"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "c44b15a6936a32d8490ec68c23e6902140e2862d4f7fb833a0ddbc38d150863b",
+    "init_qpos_sha256": "8250a701d5201b5c3ca3eee493afcc8e61a7894a0f8a2f4bfb3d5d5f7e6e4381"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "reach-wall-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "a83d5e90c865b0265cf47fc2d276db89d694f791ebcf9220e721694df39c8f21",
+    "init_qpos_sha256": "2b3a7e122c4e9b0db2da56c0b20079240f1138b3acf0eac91f4f3b60e5a260cd"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "2edc0ddd40ff8b6bb8b913f844987c882301af8dc809a3fec005ed1547316e4b",
+    "init_qpos_sha256": "1008ce721a3a42121112cf05beb3a2e1c06130d172a48e22a16a513a4a7b98b6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "3ebd231610edfcb9ed90a6f274ead1d01845eacc1d02a21e303a31f75e4eaf8b",
+    "init_qpos_sha256": "e7e72da6010eaf1e0d1b0ef6503a73de90ac4a3dddd0667e0be7b7507b86ce79"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "fcb59f27b517ab9ca7221b97f234608b87d43c3c11320fbbfe47bf13eb9797d9",
+    "init_qpos_sha256": "81283abd42c64d2142109dfd94cc09e178f5f26447214d128bac1d62558cd7e6"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "a225c47ac200d0fdd2112529d8ec745e10316ee6281c649c691e7da8b94a808c",
+    "init_qpos_sha256": "1a5c79ff36364ee22c702844de21ba03ab63b4a1c2f83b61f714549eaee30e67"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "1f113e3dc33e5d432a3e984c7d8b74191adee1341036f010c168128a747a7c8e",
+    "init_qpos_sha256": "4da81e092f24554a5ff148aab72211ece36dfc4c69215934c9ce2e95c9f6cec7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "e1680c30cf351fef751076043c07af7098e77133363cbce7f575b91732ed509f",
+    "init_qpos_sha256": "68223b3d693457d6e5d05f58f6756fec529d7c10f0b878c03f1c0d982bc3c309"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "fba8202ab32f3170bec483b4216f617e94ba0d65a2bea6a8ada21b190b576f61",
+    "init_qpos_sha256": "ab9821b7de42dba8af50757fa273ce5355d1f109a34ffec2f18d26ea89775bec"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "809fc46b7bf99eeb790f8be42770c123ae00ca28f9f51efe399b776c1edec9a2",
+    "init_qpos_sha256": "1d0eb548373b306ad220c63f9a2c301b6f10fc17850d98a7a157a1c4d52ef492"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "b1e50c67b3b72c005cb774f3f2db668ac702dcbea912b977226481e633c05b60",
+    "init_qpos_sha256": "222b638d6b0244835a85d12207ac15520c03daa6ab52f1bcab85a2f3a91bc4f5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "shelf-place-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "4af6c7942c69ecd351dbc88de8299332de0406793df2fdd158db31c0196deb40",
+    "init_qpos_sha256": "ffd0e5fbf5882109c8921b268723a2e8508bc6c622cdd54073aac86ca1dca037"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "9ed6e7fa1cc0f88d53fdf0a4c277e25b55f65ddb1e267ab7a72fca8385a941a1",
+    "init_qpos_sha256": "9c3d4815cd68ff980bebec478b1b610cde057c0f5ebd7458ad1c4edda9799e5f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "8c6d532741658af60c1b0d98e9944af7841dbef62dd868e3f0e9efc9d3fc7fd2",
+    "init_qpos_sha256": "75c4014fc7868445bcc22acc590c87408c6ba565b37cadc443f7dd2503b5f6ce"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "c695266d40449cffc4fe68095bd68d0d5d5a7cfcec772d8b07d8c7495314725a",
+    "init_qpos_sha256": "b724c9eb5c70571a5bfab6a11680ddd0e3017568892c0591d3cd987d44b588d7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "025c07d35978fde91d3b504b87d6933ffd032590144fbd8549ca2cc642f905d9",
+    "init_qpos_sha256": "08ac426b2270654f2e275dd15efa04591b6d056f68ad1519b8d347600a1b54aa"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "4b9c13bc91540d42e4fc79f44215791a2f56be8f3bb5c68b73a21c29c584eb54",
+    "init_qpos_sha256": "3d1295c4d5c3c9bd60b46fe8caa82ef4551684ac324351cfe85cf896278e56ab"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "a947f06dc922af5b7329ea4ea9398cd8076be51d334d7ce455272dc8fcfd4b46",
+    "init_qpos_sha256": "f054148294647fdfd7f1d35981aca47fa5141b7d49fe80b8c10f312a18dda4e8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "2a4f93690d682c721527d9e02f23b15005e563b0877a5cb18b23f8ca7d4041b8",
+    "init_qpos_sha256": "47e7a1c611856981d6fcf95438387fdbf67a7dfe3c1efd835e38594e9b67f4dc"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "d51d6216dc92599ea29eca652db286a0d84c8ba2fc18453eee4d5160687e6cdb",
+    "init_qpos_sha256": "c28a7fa9e96907c147771ed37b4241d44544e1ee2a003d50638a763edfbd366a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "7261947bb23d2d3c990c538cb42a2918dca216a10b26fba68822109f84a9ace0",
+    "init_qpos_sha256": "e4413f11635f061f8a49bff14c59b9d55f85cda279580779ce59e06eccb52df7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "soccer-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "e08574b235b3bf514e99d735cb9cb7c356b2e67c4d56b30eb19347ed8c259d2f",
+    "init_qpos_sha256": "b9568ec16a21d3686190b116e00c7a04c3802a1493d5ba0c966f18a34de425f3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "a4a583b7117ba625ad92995536c8712955eb6a18f3506f5874a5f3172d0883f3",
+    "init_qpos_sha256": "9e5c8d58f2922131621e289560d68554d52ae42ae6af9ac51a0786b01fb3728b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "d6b4bdcc65c87636368c24c1e9472f5ec5a2465a8e3106ef97a66c6c676c139b",
+    "init_qpos_sha256": "1712091b1100ae77882a0572ec0f71c9645dc3e37675619af059720312d109f4"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "b7ffedbec60e00982e7b5a7ea491bba10aa90edc32ae6d6c7f4b66760316078d",
+    "init_qpos_sha256": "4df8a7e6e7a90140b73a795d8dad1c8f5192fe38121ba6b4b33d87dde6b3e448"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "62f59ebae904acc3b3f083fe0d583fedb3fefdcc912ad14c3d2349c981ea7f90",
+    "init_qpos_sha256": "c03dc33ddb12ad1e72af6e10c7ddbdd60303f0f0ea69d7061b27cd6627ada103"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "dc098bc44e37a31a6c756f0729e936cbbd92cf86255cf1a21116dd8eaa18542c",
+    "init_qpos_sha256": "df9e8484fca13c853bc77a7ae5893c0b64693fafcb456f171e9d73b4b92189fe"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "48542e4bad8ca2adf69d36bfa88063a6ddc87e716e573c78300a24da3e37738d",
+    "init_qpos_sha256": "c0122c290ce273d14f1d5da2eb8a1cc201ee7eb5cff28c527179b3e4e86a4af8"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "2287f118af07b61de5942ac5afdfd0ad92c27deae3b65c52527ee51a049b5913",
+    "init_qpos_sha256": "d760d2320c14e07e3d78219966fa0daf2bd41abc80daf7daf4df040a78ca1126"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "9a2cf4ecf2116a96bbb6ef40ad86c25271395330e1f806e0097057957e3424a0",
+    "init_qpos_sha256": "b34d4526605ed5283b2d20f7a8097fae9759573a3c2fec42842b8209a282711a"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "a35efae3de68826cef9c59ef347f1ac99dd95bd29440b2d089e6c51d20e3e5fe",
+    "init_qpos_sha256": "c491246b36fac4c33fca96e14335b87344894112d4effc908ce5bc0a8bacb714"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-pull-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "0e0b68142b55becda332cf8a00f13e8168dcd0ef19d97f942f60e7cffff1f931",
+    "init_qpos_sha256": "7cc84bc171e0ff4f15ea049d9bd23c414023122e867454a819d6ac84b3fc4a8b"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "722ce053377d2effcaf7282546df719048cea52f784c19a71bac5c0d4b47a58b",
+    "init_qpos_sha256": "b9973a454c5c908ce51981a3a9b6d2ff8dd45ec3ad595bfca8a41866243a8549"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "b42800a27032e9a4791f8956a5e8bf1de118159fc8ba68c9ca85d3b725c49015",
+    "init_qpos_sha256": "3d9816f6dfee1076927f5a9ce34846a2f59cde3b2515b3c2b2ffe40906e9d6a9"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "148522a8708e0f20f9fe6c15266a5ad71e06480d86ceec5ceee812142d790d7b",
+    "init_qpos_sha256": "772252835be6a53cd0a06020452763d6ceccb09a408ba23c20bf49c672cbbca4"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "ad6e120abdb8119833c4fb67a231d894965717fbab87aee74c3f7ab8790ef57b",
+    "init_qpos_sha256": "1eff624f0d7201e82c1faf4136d5a58051caf08632cd65d93fd14580429d8278"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "5c38031732b9fb93f97810e38b14ba3702c860b3b5383a442e45b88928378763",
+    "init_qpos_sha256": "a78f5c1fc00de800a3e29bf9686128f2a4627127d3048636009d7edc51491a47"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "75bd620663626d736d89e916d8dbfb7977588de1a3812f0d08eaf397602402dc",
+    "init_qpos_sha256": "5cdbf81e509053ac0d901a798612e28f40e63352f91cabd4b69333b9efc8819e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "a053d78efaea8fab48842adf6742b60e68bf5e45389c6f06e808707f1ae555d4",
+    "init_qpos_sha256": "f82d7c263c07486bc132bedebcf01be5f926d183dd2ff6f3c475a1ff613cceb7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "00f9a7187704b5ddcf977b00848057d5e325e86905c5b8a885c8c9f495f87b2f",
+    "init_qpos_sha256": "834a2c732bad72db3f89f0df5e5ef6d15051d737f7741b90c8451fb487ccc0e7"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "819448fb7604e9f5625bc5d9c640a016d3219f56c746b85d14af2e9033fa84be",
+    "init_qpos_sha256": "55e39103611c1960bb7dc2412216db56f87e291dee1695862132ff6e768bf7c1"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "stick-push-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "6dcb9f3a4f8d7e189d77624df7695196f6a78b16c774a8c22920f0b0a0cc3f4c",
+    "init_qpos_sha256": "471f4d439858499a68ffb0533e79e5668b24461f5e9d51383a11f060aae94e02"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "6d44475c00ae66418f85e310737275db93c7ff31559d83e4f1affe087385e6b3",
+    "init_qpos_sha256": "5b6866acd40fd5ace36aa044053ddd6505bb2655f3ae884dd71a7da990fd7184"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "b5e7acaeead94ac0fabf5aaa2d1c4996c893c7424d34de2185fff0d2aadbc4e1",
+    "init_qpos_sha256": "8dc7ed62f67bd4fbcb8e6f0c4df745b391824b62837713321fffdec898abcfab"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "12bdacd235562b413e6038b7b34eb5b1955e897c866cacce7ad50cbd9e140898",
+    "init_qpos_sha256": "28c7e6ab980e24dd6e6f8f04db055d2e746e63636dadedcf6c16e38753f30d0f"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "41303b5ee0b9b2f959d5ffa2fc20425fafe9b4b96a675fc85f1c4762cb420213",
+    "init_qpos_sha256": "124e4b2a593b3c19fbc54a81c20bb0a2d21e636e7ab4e6f687d55ea7e6be689e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "1aaf8b0db73ff40c1a60467206023645b73c549ca7e3f30583c72653e0760f03",
+    "init_qpos_sha256": "61eef897a514c9493da2713d7795af1e6d02d3adb3a94433623e109dfe267127"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "1fa3940218a8efd88e54dd58ccd5aaa920c9796d4d941f7b325e9f8806a50870",
+    "init_qpos_sha256": "9548ebaf22a75727473f67b8931cbc265fba1a386270c725c4fd3e3aabc3a7d2"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "b59db207a64bea266255573f490eaa044e8ca1ec594b5a971f765ff199a6251c",
+    "init_qpos_sha256": "259a0c80ee0ef6f0ddd5d2c0740d8725b391d3f9bd4366ac2cd44a29dad968de"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "94c24d5e1b1b2790d50bf28dbad35d5443249d34afba52122dca9f6b37df74a6",
+    "init_qpos_sha256": "ac59890652a9e4b93fdc34f22a97a1e5e4fcf06e19a6305314aff8446cc98f70"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "a1ca0d44bfdb379da2f36efc59feaeab311325edc6a76dfb8caffa83b9770bbf",
+    "init_qpos_sha256": "ab289c43c4f5b83b8f0a529826365a7e666e679e9ca712e0ad1b8e8e22a191c5"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-into-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "a0132c041d6a4c4143226b4a8988f102c75593627022d5ef119f1ba7bdb2c3c5",
+    "init_qpos_sha256": "09bcc94c7da1e66d1a6e91229805d7761930e66f2edad9e51b94363845e9681e"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "1d581079a990a718f6645fdab390279e5f6312381447845d3d8132a946324f73",
+    "init_qpos_sha256": "50c1ba0ae6afa42d990ee8f70d5b19b2c7135bfca5251e492ad40a77ff9efc03"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "6dedd0d423843442c41f1c7b6c0b849921c4967dac47b660d7b27d706ccfc1c3",
+    "init_qpos_sha256": "eb15581dec08d38bbf11891cca07be1c1e5e91a94308a32792fac09b001133a3"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "f0e0a445726b8734b3cca0130e91faefa5ddcf8f6911e734a23c66491feba5c6",
+    "init_qpos_sha256": "36d4bddd9586b08106b442ecf6dfad4b5bfbdf8206fdb8432c192855127bb369"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "00f96515f71d1700ee3c2bb3630df83d7ce534bb8eae05e4917db3c2a0d0388c",
+    "init_qpos_sha256": "5064b800a4eb9daa59f48c7257e15fa4afb11cdd7aa52072dd76ac93e41ade58"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "ffe86201aa191da80f13ab5ef88ecb4facb382632f03c75b0a40cfc68192fbf4",
+    "init_qpos_sha256": "b3a9ee1ee216172b5a7a5149fc9a72ee49e0ce1f4573f5434d7bb00ef0d59b37"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "35695752aa1fcbf24516840ae18213be086ea6c3456ed94a891fd074a3676e25",
+    "init_qpos_sha256": "d188e467b3ffb6fee85091afb7758fb9488fa4e82fa06e65330a59cf049dc5ae"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "5fd3a1f2e3a2adaef18fdfc0a0b963ab6411aeda0fa939825b773738cc990d75",
+    "init_qpos_sha256": "8598bf42f92938f4682a6f3157095e88e5510dfb6baccfa5a5c2a6f1b1bae299"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "0f186365076b6e7a7d10979cdf242d788a899d8f06e5d6a7f8bb731fd644ad1e",
+    "init_qpos_sha256": "851ace3b3e65be9f58469606bece1977e1b388563753e6677c99dc25e03cd54d"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "81d2028065fc66a3f19bc58ae0bf0e888acce919ecef2fd93a1822f16092972c",
+    "init_qpos_sha256": "1514ee61a66567271083c404c06ad012ef9bbcf13a5168252084236a762d7361"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "sweep-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "a8d09cd85bb37b89484ba196b319f614c7fe6c0823c45696f506a1b122c16010",
+    "init_qpos_sha256": "028d411e20512ea61dfbd9659e4e8e923d073a9f267495238d16461b00e802af"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "1ff76322ebe2e31c4fa5638607bc0bb671c33d1e80aebf0fc352ac2e34d7865c",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "33b2ddc92df0b8718a06f5d4f74cc2c336b67ac344081f21d750a807f68dceb6",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "8b1e74058a9eec528acd8e00fd57fe8c0c87f491b57056988bd3caeb07c339dc",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "7f2320ee73ee2bf30458df20bb5ba327e45090b34c2f7f3952aaa97dbdd80556",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "4707b9e8363c97699f0ad70ce689f9bf9945d94423253914d6a6cf4626884f3b",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "5a735c6f9e773f9f6d22020c5ab0a7a6639c0ec9e0fd8c061f6195916628afc5",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "a390b3dc6ba013e537e67a057be032662c624f75e313f4c7258d32303ed2c049",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "572aae728b3d69c9b0ece1f1af5a67ac5f5d0fa0850968bd13d6cb9e0b3054b8",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "33dd37be1a3d5a9d59027afcdd863d6507cc30c7630b0713e4a1de449589860f",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-close-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "ab077c687325a818d8a7997c6c471ec1acaa9ab5451326e6466b8eed91fd0568",
+    "init_qpos_sha256": "b8b8bda8fcdaee852e49081ec5c0dd54a537f906d482605b651bae22a5ce6954"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 0,
+    "task_index": 0,
+    "rand_vec_sha256": "0823f3a87353ea9325992327114e4841da43a4c1714a2ade7655d36c5eed3878",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 1,
+    "task_index": 1,
+    "rand_vec_sha256": "62a91e59fc6b063f72a1199fa3f899ed35b93818bac658a114c3c3b7ddedc514",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 2,
+    "task_index": 2,
+    "rand_vec_sha256": "3d879651a58e8d1ab9119df0a94209e449af23d08265dd4a273ef344349d9b92",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 3,
+    "task_index": 3,
+    "rand_vec_sha256": "7b8de0a767d77d621e04c234a52b236561af5fff4af60bd1839c5bdd1ca15b12",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 4,
+    "task_index": 4,
+    "rand_vec_sha256": "45f8b305fb93be1a44fa5abb77caf285390f6958e85754eb5a98f6f1ca72d895",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 5,
+    "task_index": 5,
+    "rand_vec_sha256": "8e7e81f3d55849e1292376de39ba28530cfc3dabac4a02901322d540061611aa",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 6,
+    "task_index": 6,
+    "rand_vec_sha256": "ca7b350040d15ea25203debdba1f83891235a337bd0dc72c6032a21b6b46bd47",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 7,
+    "task_index": 7,
+    "rand_vec_sha256": "6d3528470d59d52f0e5ed080398ed39ae7886fd54f811d75a1114bb7f1326555",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 8,
+    "task_index": 8,
+    "rand_vec_sha256": "0b3274122472554ca6120aef81f5930ed501be2f45da739d5851d58d181a348c",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  },
+  {
+    "environment": "metaworld",
+    "task_name": "window-open-v3",
+    "seed": 9,
+    "task_index": 9,
+    "rand_vec_sha256": "6394c6c882424afca46a026110aa0fe26875ce72635054c6d1b68c7f21591a8b",
+    "init_qpos_sha256": "37d9d96d82c013a3dfbe016c2a4b7868249526ceb2684d624f01698e7adc0307"
+  }
+]

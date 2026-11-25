@@ -11,6 +11,7 @@ from rpent.tools import Tool
 
 EPISODE_CONTRACT_VERSION = 3
 CAMERAS = {
+    "metaworld": ("corner2", "gripperPOV"),
     "libero": ("agentview", "wrist"),
     "robocasa": ("agentview", "agentview_right", "wrist"),
     "robotwin": ("head", "left_wrist", "right_wrist"),
@@ -196,7 +197,7 @@ def validate_episode_options(environment: str, values: dict) -> dict:
             raise ValueError(f"Invalid episode option {name}")
     size = options["image_size"]
     if size not in IMAGE_SIZES or (
-        size != 1024 and environment not in {"libero", "robocasa"}
+        size != 1024 and environment not in {"libero", "robocasa", "metaworld"}
     ):
         raise ValueError(f"Unsupported image size {size} for {environment}")
     if not 1 <= options["max_actions_per_call"] <= 3:

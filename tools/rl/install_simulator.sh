@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if [[ $# != 3 ]]; then
-  echo 'Usage: install_simulator.sh {libero|robotwin|robocasa|robodojo} VENV RLINF_ROOT' >&2
+  echo 'Usage: install_simulator.sh {libero|robotwin|robocasa|robodojo|metaworld} VENV RLINF_ROOT' >&2
   exit 2
 fi
 
@@ -16,7 +16,7 @@ case "$simulator" in
     python_version=3.12
     profile=libero-rl.txt
     ;;
-  robotwin|robocasa|robodojo)
+  robotwin|robocasa|robodojo|metaworld)
     python_version=3.11
     profile="rl-$simulator.txt"
     ;;
@@ -35,7 +35,7 @@ case "$simulator" in
   robotwin)
     "${pip[@]}" --index https://download.pytorch.org/whl/cu128 torch==2.8.0 torchvision==0.23.0
     ;;
-  robocasa)
+  robocasa|metaworld)
     "${pip[@]}" --index https://download.pytorch.org/whl/cpu torch==2.7.1 torchvision==0.22.1
     ;;
   robodojo)

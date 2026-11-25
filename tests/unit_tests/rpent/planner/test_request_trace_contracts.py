@@ -370,3 +370,135 @@ def test_stream_reader_requires_done_and_keeps_tool_fragments(tmp_path):
     assert message["reasoning_content"] == "think"
     assert message["tool_calls"][0]["function"] == {"name": "finish", "arguments": "{}"}
     assert metadata["finish_reason"] == "tool_calls"
+
+
+def test_generic_chat_trace_preserves_provider_model(tmp_path, monkeypatch):
+    from rpent.planner.base import build_api_model
+    from rpent.planner.qwen import QwenChatModel, RecordedChatModel
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test-only")
+    model = build_api_model(
+        "openai-chat:example-chat",
+        "http://127.0.0.1:1/v1",
+        strict_tool_definitions=False,
+        request_trace_dir=tmp_path,
+    )
+    assert isinstance(model, RecordedChatModel)
+    assert not isinstance(model, QwenChatModel)
+    assert model.request_trace.directory == tmp_path
+    assert model.model_name == "example-chat"
+
+
+@pytest.mark.parametrize(
+    ("terminal", "error", "accepted"),
+    [
+        (True, "GeneratorExit: ", True),
+        (False, "GeneratorExit: ", False),
+        (True, "ReadError: connection reset", False),
+    ],
+)
+def test_gzip_stream_closed_after_done(tmp_path, terminal, error, accepted):
+    import gzip
+
+    from rpent.evaluation.trajectory import read_response
+
+    event = {"choices": [{"delta": {"content": "ok"}, "finish_reason": "stop"}]}
+    stream = "data: " + json.dumps(event) + "\n\n"
+    if terminal:
+        stream += "data: [DONE]\n\n"
+    (tmp_path / "response.body").write_bytes(gzip.compress(stream.encode())[:-8])
+    (tmp_path / "metadata.json").write_text(
+        json.dumps(
+            {
+                "status_code": 200,
+                "complete": False,
+                "error": error,
+                "content_type": "text/event-stream",
+            }
+        )
+    )
+    if accepted:
+        assert read_response(tmp_path)[0]["content"] == "ok"
+    else:
+        with pytest.raises(ValueError):
+            read_response(tmp_path)
+
+
+@pytest.mark.parametrize("configured, expected", [(None, 14400.0), ("300", 300.0)])
+def test_provider_preserves_read_timeout(monkeypatch, tmp_path, configured, expected):
+    from rpent.planner.base import build_api_model
+
+    monkeypatch.delenv("RPENT_HTTP_READ_TIMEOUT_S", raising=False)
+    if configured:
+        monkeypatch.setenv("RPENT_HTTP_READ_TIMEOUT_S", configured)
+    model = build_api_model(
+        "openai-chat:example-chat", "http://127.0.0.1:1/v1", request_trace_dir=tmp_path
+    )
+    client = model.provider.client
+    assert client.timeout.read == expected
+    assert client.timeout.connect == (30.0 if configured else 14400.0)
+    asyncio.run(client.close())
+
+
+@pytest.mark.parametrize("early_eof", [False, True])
+def test_stream_failure_reaches_transport_classifier(monkeypatch, tmp_path, early_eof):
+    from pydantic_ai.messages import ModelRequest, UserPromptPart
+    from pydantic_ai.models import ModelRequestParameters
+
+    from rpent.planner.api_loop import _model_transport_kind
+    from rpent.planner.base import build_api_model
+
+    monkeypatch.setenv("RPENT_HTTP_READ_TIMEOUT_S", "0.15")
+
+    async def run():
+        release = asyncio.Event()
+
+        async def stalled(reader, writer):
+            try:
+                await reader.readuntil(b"\r\n\r\n")
+                writer.write(
+                    b"HTTP/1.1 200 OK\r\nContent-Type: text/event-stream\r\nTransfer-Encoding: chunked\r\n\r\n"
+                )
+                if early_eof:
+                    writer.write(b"0\r\n\r\n")
+                await writer.drain()
+                await release.wait()
+            finally:
+                writer.close()
+                await writer.wait_closed()
+
+        async with await asyncio.start_server(stalled, "127.0.0.1", 0) as server:
+            port = server.sockets[0].getsockname()[1]
+            model = build_api_model(
+                "openai-chat:example-chat",
+                f"http://127.0.0.1:{port}/v1",
+                request_trace_dir=tmp_path,
+            )
+
+            async def consume():
+                async with model.request_stream(
+                    [ModelRequest(parts=[UserPromptPart("hello")])],
+                    None,
+                    ModelRequestParameters(),
+                ) as stream:
+                    async for _ in stream:
+                        pass
+
+            try:
+                with pytest.raises(Exception) as caught:
+                    await asyncio.wait_for(consume(), 4.0)
+                assert _model_transport_kind(caught.value) == (
+                    "model_transport" if early_eof else "model_timeout"
+                )
+                meta = json.loads(
+                    (tmp_path / "requests/000001/metadata.json").read_text()
+                )
+                assert ("RemoteProtocolError" if early_eof else "ReadTimeout") in meta[
+                    "error"
+                ]
+                assert not meta["complete"]
+            finally:
+                release.set()
+                await model.provider.client.close()
+
+    asyncio.run(run())

@@ -20,6 +20,7 @@ from __future__ import annotations
 import base64
 import hashlib
 import json
+import zlib
 from pathlib import Path
 from typing import Any
 
@@ -46,10 +47,28 @@ def restore(value: Any, root: Path, *, paths: bool = False) -> Any:
 def read_response(directory: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     """Read a complete ordinary or streamed assistant response."""
     metadata = json.loads((directory / "metadata.json").read_text())
-    if not metadata.get("complete") or metadata.get("status_code") != 200:
+    if metadata.get("status_code") != 200:
         raise ValueError(f"incomplete HTTP response: {directory}")
-    raw = (directory / "response.body").read_text()
-    if "text/event-stream" not in metadata.get("content_type", ""):
+    streamed = "text/event-stream" in metadata.get("content_type", "")
+    body = (directory / "response.body").read_bytes()
+    reader_closed = (
+        streamed and (metadata.get("error") or "").strip() == "GeneratorExit:"
+    )
+    if not metadata.get("complete") and not reader_closed:
+        raise ValueError(f"incomplete HTTP response: {directory}")
+    if body.startswith(b"\x1f\x8b"):
+        decoder = zlib.decompressobj(16 + zlib.MAX_WBITS)
+        try:
+            body = decoder.decompress(body) + decoder.flush()
+        except zlib.error as exc:
+            raise ValueError(f"invalid gzip response: {directory}") from exc
+        if decoder.unused_data or (not decoder.eof and not reader_closed):
+            raise ValueError(f"incomplete gzip response: {directory}")
+    raw = body.decode("utf-8")
+    # Streaming clients can close the transport immediately after the SSE terminator.
+    if reader_closed and raw.rstrip().splitlines()[-1:] != ["data: [DONE]"]:
+        raise ValueError(f"incomplete HTTP response: {directory}")
+    if not streamed:
         result = json.loads(raw)
         choice = result["choices"][0]
         message, reason = choice["message"], choice["finish_reason"]
