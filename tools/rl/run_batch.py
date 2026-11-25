@@ -201,7 +201,7 @@ def read_jobs(path: Path, seeds: list[int] | None) -> list[dict]:
             else [row.get("task_name")]
         )
         if any(
-            not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9_]+", name)
+            not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_-]*", name)
             for name in identifiers
         ):
             raise ValueError(f"invalid task identifier: {row}")

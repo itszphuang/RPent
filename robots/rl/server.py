@@ -61,7 +61,9 @@ def _release_unused_batch_planners(env):
 def main() -> None:
     """Run one isolated simulator in its own Python environment."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--env", choices=("robocasa", "robotwin"), required=True)
+    parser.add_argument(
+        "--env", choices=("robocasa", "robotwin", "metaworld"), required=True
+    )
     parser.add_argument("--task-name", required=True)
     parser.add_argument("--seed", type=int, required=True)
     parser.add_argument("--split", default="target")
@@ -76,7 +78,15 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=0)
     parser.add_argument("--parent-watch", action="store_true")
     args = parser.parse_args()
-    if args.env == "robocasa":
+    if args.env == "metaworld":
+        if args.cuda_device is not None:
+            from rpent.utils.egl import configure_egl_device
+
+            configure_egl_device(args.cuda_device)
+        from robots.metaworld.env_server import MetaWorldEnvFacade
+
+        facade = MetaWorldEnvFacade(args.task_name, args.seed)
+    elif args.env == "robocasa":
         if args.cuda_device is not None:
             from rpent.utils.egl import configure_egl_device
 

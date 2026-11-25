@@ -59,6 +59,7 @@ def source_digest() -> str:
         "robots/robocasa",
         "robots/robotwin",
         "robots/robodojo",
+        "robots/metaworld",
         "rpent/tools",
         "rpent/session",
         "rpent/utils/rpc",
@@ -330,9 +331,11 @@ class RemoteToolkit(Toolkit):
                 if coordinates.get("support_surface") == "floor"
                 else "table_height_above_base_m"
             )
+            accepted_tcp = {"grip_site", "native_grasp_tcp", "calibrated_grasp_tcp"}
+            if request["task"]["environment"] == "metaworld":
+                accepted_tcp = {"finger_pad_midpoint"}
             if (
-                coordinates.get("tcp")
-                not in {"grip_site", "native_grasp_tcp", "calibrated_grasp_tcp"}
+                coordinates.get("tcp") not in accepted_tcp
                 or coordinates.get("contract_version") != "episode_coordinates_v2"
                 or coordinates.get(height) is None
             ):

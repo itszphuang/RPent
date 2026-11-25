@@ -41,6 +41,10 @@ def primitive_owner(environment: str):
         from robots.rl.tools import LiberoRLPrimitives
 
         return LiberoRLPrimitives
+    if environment == "metaworld":
+        from robots.rl.metaworld import MetaWorldPrimitives
+
+        return MetaWorldPrimitives
     if environment == "robodojo":
         from robots.rl.robodojo import RoboDojoPrimitives
 
@@ -59,12 +63,18 @@ def primitive_owner(environment: str):
 
 def episode_tools(toolkit, environment, max_actions, perception=None):
     """Build the same model schema without importing native adapters on the client."""
-    from robots.rl.actions import ActionBatch, DualArmBatch, MobileBatch
+    from robots.rl.actions import (
+        ActionBatch,
+        DualArmBatch,
+        MobileBatch,
+        PositionActionBatch,
+    )
     from robots.rl.contracts import coordinate_definition, strict_tool
     from robots.rl.units import model_tool
 
     owner = RecordedPerception if perception is None else perception
     batch_type = {
+        "metaworld": PositionActionBatch,
         "libero": ActionBatch,
         "robocasa": MobileBatch,
         "robotwin": DualArmBatch,
@@ -123,7 +133,10 @@ class RLToolkit(Toolkit):
         self._primitives = primitive_owner(environment)(
             state=state, check_cancelled=self.raise_if_cancelled, **runtime_kwargs
         )
-        if environment in {"libero", "robocasa"} and image_size != NATIVE_SIZE:
+        if (
+            environment in {"libero", "robocasa", "metaworld"}
+            and image_size != NATIVE_SIZE
+        ):
             self._primitives.display_size = image_size
         self.action_error = None
         self._task = self._primitives.env.get_task_language()
@@ -159,7 +172,11 @@ class RLToolkit(Toolkit):
                 **self._primitives.robot_state(),
                 "terminated": self._primitives.native_success(),
                 "truncated": self._primitives.env_steps
-                >= self._primitives._max_episode_steps,
+                >= self._primitives._max_episode_steps
+                and not (
+                    self.environment == "metaworld"
+                    and self._primitives.native_success()
+                ),
             }
         env = self._primitives.env
         return {
@@ -365,6 +382,16 @@ class RLToolkit(Toolkit):
                 "image_history": self.image_history,
                 "native_success_seconds": self._native_success_seconds,
                 "started_at_wall": getattr(self, "_started_at_wall", None),
+                **(
+                    {
+                        **self._primitives.identity,
+                        "init_settle_steps": 0,
+                        "model_env_steps": self._primitives.env_steps,
+                        "native_total_steps": self._primitives.env_steps,
+                    }
+                    if self.environment == "metaworld"
+                    else {}
+                ),
                 **self.workflow_stats,
                 "images_sent": self._images_sent,
                 "images_generated_for_feedback": self._images_sent,

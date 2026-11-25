@@ -219,3 +219,25 @@ class MobileBatch(ActionBatch):
     ) -> ToolResult:
         """Execute 1..K ordered move_base, move_lift, move_to or set_gripper items. Each item controls one component. An arm target uses the selected coordinate convention at the start of its item. In general coordinates the mount follows the base and lift; supply the target for the frame after each preceding item. Partial, error, success or truncation stops the remaining list. Use view_env for RGB."""
         return self._execute_actions(actions)
+
+
+class PositionMoveAction(BaseModel):
+    """Absolute TCP translation for an orientation-locked arm."""
+
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
+    action: Literal["move_to"]
+    xyz: Vector3 = Field(description="Absolute TCP xyz in the general frame, metres.")
+
+
+PositionAction = Annotated[
+    PositionMoveAction | GripperAction, Field(discriminator="action")
+]
+
+
+class PositionActionBatch(ActionBatch):
+    @tool
+    def execute_actions(
+        self, actions: Annotated[list[PositionAction], Field(min_length=1)]
+    ) -> ToolResult:
+        """Execute 1..K ordered move_to(xyz) or set_gripper(opening) actions. Stop on partial, error, success or truncation."""
+        return self._execute_actions(actions)
