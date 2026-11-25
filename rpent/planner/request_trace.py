@@ -21,7 +21,9 @@ import base64
 import contextvars
 import hashlib
 import json
+import os
 import time
+import zlib
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -166,6 +168,28 @@ class _ResponseStream(httpx.AsyncByteStream):
                         )
                         write_json(self.directory / "metadata.json", self.metadata)
                     yield chunk
+                if (
+                    os.environ.get("RPENT_HTTP_READ_TIMEOUT_S")
+                    and self.metadata.get("status_code") == 200
+                    and "text/event-stream" in self.metadata.get("content_type", "")
+                    and self.metadata.get("content_encoding", "")
+                    in ("", "identity", "gzip")
+                ):
+                    # A server can finish the HTTP body cleanly while dropping its SSE reply.
+                    stream.flush()
+                    if self.metadata.get("content_encoding") == "gzip":
+                        raw = (self.directory / "response.body").read_bytes()
+                        try:
+                            tail = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(
+                                raw
+                            )[-1000:]
+                        except zlib.error as exc:
+                            raise httpx.RemoteProtocolError(
+                                "Invalid gzip SSE body"
+                            ) from exc
+                    if tail.rstrip().splitlines()[-1:] != [b"data: [DONE]"]:
+                        complete = False
+                        raise httpx.RemoteProtocolError("Model SSE ended before [DONE]")
                 complete = True
         except BaseException as exc:
             error = f"{type(exc).__name__}: {exc}"
@@ -216,6 +240,7 @@ class TraceTransport(httpx.AsyncBaseTransport):
         metadata.update(
             status_code=response.status_code,
             content_type=response.headers.get("content-type", ""),
+            content_encoding=response.headers.get("content-encoding", "").lower(),
         )
         if response.is_stream_consumed:
             (directory / "response.body").write_bytes(response.content)

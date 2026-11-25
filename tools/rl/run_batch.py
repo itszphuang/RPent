@@ -203,7 +203,8 @@ def read_jobs(path: Path, seeds: list[int] | None) -> list[dict]:
             else [row.get("task_name")]
         )
         if any(
-            not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_-]*", name)
+            not isinstance(name, str)
+            or not re.fullmatch(r"[A-Za-z0-9_][A-Za-z0-9_-]*", name)
             for name in identifiers
         ):
             raise ValueError(f"invalid task identifier: {row}")
@@ -283,6 +284,19 @@ def completed(output: Path) -> dict | None:
     return None
 
 
+def transport_failure(attempt: Path) -> dict | None:
+    """Identify a failed model request even if the collector deadline also fired."""
+    logs = sorted(attempt.glob("transcript_*.json"))
+    try:
+        transcript = json.loads(logs[-1].read_text()) if logs else {}
+    except (OSError, ValueError):
+        return None
+    kind = transcript.get("error_kind")
+    if kind in ("model_transport", "model_timeout"):
+        return {"error_kind": kind, "error": transcript.get("error")}
+    return None
+
+
 def terminal_failure(
     attempt: Path, *, deadline: bool = False, job: dict | None = None
 ) -> dict | None:
@@ -295,6 +309,8 @@ def terminal_failure(
         transcripts = sorted(attempt.glob("transcript_*.json"))
         transcript = json.loads(transcripts[-1].read_text()) if transcripts else {}
         kind = transcript.get("error_kind")
+        if kind in ("model_transport", "model_timeout"):
+            return None
         if deadline:
             kind = "episode_timeout"
         elif (
@@ -647,7 +663,12 @@ def collect(args: argparse.Namespace, batch: Path) -> None:
                 if STOP.is_set():
                     atomic(attempt / "INTERRUPTED.json", status)
                     return
-                if deadline and exclude_queue:
+                if transport := transport_failure(attempt):
+                    atomic(
+                        attempt / "infrastructure_error.json",
+                        {**transport, "status": status},
+                    )
+                elif deadline and exclude_queue:
                     atomic(
                         attempt / "infrastructure_error.json",
                         {
@@ -686,6 +707,10 @@ def collect(args: argparse.Namespace, batch: Path) -> None:
                     )
                     break
                 try:
+                    if (attempt / "infrastructure_error.json").exists():
+                        raise ValueError(
+                            "Infrastructure failure; see infrastructure_error.json"
+                        )
                     if code:
                         raise ValueError(f"Worker exited {code}")
                     result, turns = audit_episode(attempt, verify_assets=True)
