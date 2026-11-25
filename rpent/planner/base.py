@@ -309,12 +309,15 @@ def build_api_model(
     if not strict_tool_definitions:
         resolved = _without_strict_tool_definitions(resolved)
     if trace is not None:
-        from rpent.planner.qwen import QwenChatModel
+        from pydantic_ai.models.openai import OpenAIChatModel
+        from rpent.planner.qwen import RecordedChatModel
 
-        if not isinstance(resolved, QwenChatModel):
-            raise ValueError(
-                "native request recording currently requires a Qwen chat model"
+        if type(resolved) is OpenAIChatModel:
+            resolved = RecordedChatModel(
+                resolved.model_name, provider=resolved.provider, profile=resolved.profile
             )
+        if not isinstance(resolved, RecordedChatModel):
+            raise ValueError("native request recording requires an OpenAI chat model")
         resolved.request_trace = trace
     if admission is not None:
         from rpent.planner.qwen import QwenChatModel
