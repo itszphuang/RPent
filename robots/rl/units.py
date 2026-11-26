@@ -29,6 +29,7 @@ from rpent.tools import Tool
 EPISODE_CONTRACT_VERSION = 3
 CAMERAS: dict[str, tuple[str, ...]] = {
     "libero": ("agentview", "wrist"),
+    "metaworld": ("corner2", "gripperPOV"),
     "robocasa": ("agentview", "agentview_right", "wrist"),
     "robotwin": ("head", "left_wrist", "right_wrist"),
     "robodojo": ("cam_head", "cam_left_wrist", "cam_right_wrist"),
@@ -337,6 +338,12 @@ def validate_relations(name: str, arguments: dict[str, Any]) -> None:
 
 def argument_hint(name: str, environment: str = "libero") -> str:
     """Short actionable model feedback on invalid tool arguments."""
+    if environment == "metaworld" and name in {
+        "execute_actions",
+        "move_to",
+        "set_gripper",
+    }:
+        return "Use move_to with xyz only (fixed wrist orientation) or set_gripper with opening 0..1 in execute_actions."
     if environment == "robotwin" and name in {"move_to", "set_gripper"}:
         return "Follow the declared native action fields and orientation convention; include the selected arm where required."
     if environment == "robocasa" and name in {"move_to", "set_gripper"}:

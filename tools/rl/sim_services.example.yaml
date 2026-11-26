@@ -45,3 +45,9 @@ simulators:
     max_episodes_per_worker: 30
     env:
       ROBOTWIN_ASSETS_PATH: /path/to/assets/robotwin
+
+  # metaworld:
+  #   python: /path/to/envs/metaworld/bin/python
+  #   port: 28565
+  #   gpus: [4]
+  #   workers: 1

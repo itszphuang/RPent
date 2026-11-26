@@ -229,6 +229,28 @@ class ActionBatch:
         )
 
 
+class PositionMoveAction(BaseModel):
+    """Translate the TCP with a fixed wrist orientation."""
+
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
+    action: Literal["move_to"]
+    xyz: Vector3
+
+
+PositionAction = Annotated[
+    PositionMoveAction | GripperAction, Field(discriminator="action")
+]
+
+
+class PositionActionBatch(ActionBatch):
+    @tool
+    def execute_actions(
+        self, actions: Annotated[list[PositionAction], Field(min_length=1)]
+    ) -> ToolResult:
+        """1..K ordered actions. Use move_to with xyz or set_gripper with opening from 0 to 1."""
+        return self._execute_actions(actions)
+
+
 class DualArmBatch(ActionBatch):
     @tool
     def execute_actions(
@@ -298,6 +320,7 @@ def episode_tools(
     owner = RecordedPerception if perception is None else perception
     batch_type = {
         "libero": ActionBatch,
+        "metaworld": PositionActionBatch,
         "robocasa": MobileBatch,
         "robotwin": DualArmBatch,
         "robodojo": DualArmBatch,
@@ -334,7 +357,7 @@ def openai_tool_schemas(tools: Sequence[Tool]) -> list[dict[str, Any]]:
 
 
 class RLToolkit(Toolkit):
-    """Unified toolkit over any of the 4 simulators (fast in-memory or disk-audited)."""
+    """Unified toolkit over the supported simulators (fast in-memory or disk-audited)."""
 
     planner_builtin_tools = False
     api_environment_context = False
@@ -376,7 +399,10 @@ class RLToolkit(Toolkit):
             record_artifacts=self.record_artifacts,
             **runtime_kwargs,
         )
-        if environment in {"libero", "robocasa"} and image_size != NATIVE_SIZE:
+        if (
+            environment in {"libero", "robocasa", "metaworld"}
+            and image_size != NATIVE_SIZE
+        ):
             self._primitives.display_size = image_size
         self._task = self._primitives.env.get_task_language()
         record = self._primitives.record_observation()
@@ -414,11 +440,13 @@ class RLToolkit(Toolkit):
                 "terminated": bool(env.terminated),
                 "truncated": bool(env.truncated),
             }
+        state = self._primitives.robot_state()
+        terminated = self._primitives.native_success()
         return {
-            **self._primitives.robot_state(),
-            "terminated": self._primitives.native_success(),
-            "truncated": self._primitives.env_steps
-            >= self._primitives._max_episode_steps,
+            **state,
+            "terminated": terminated,
+            "truncated": (not terminated)
+            and self._primitives.env_steps >= self._primitives._max_episode_steps,
         }
 
     def initial_observation(self) -> ToolResult:

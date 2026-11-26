@@ -1,6 +1,6 @@
 # RPent Unified RL Simulator Layer (`robots/rl`)
 
-`robots/rl` provides a compact, uniform tool-calling interface, warm HTTP simulator pools, and standalone rollout/evaluation harness across all supported manipulation simulators (`libero`, `robotwin`, `robocasa`, and `robodojo`).
+`robots/rl` provides a compact, uniform tool-calling interface, warm HTTP simulator pools, and standalone rollout/evaluation harness across all supported manipulation simulators (`libero`, `robotwin`, `robocasa`, `robodojo`, and `metaworld`).
 
 ## Architecture
 
@@ -14,6 +14,7 @@ robots/rl/server.py  (FastAPI + SimPoolManager over Unix-socket warm workers)
    ├── robots/rl/envs/
    │     ├── libero.py           (LocalLiberoEnv + LiberoRLPrimitives)
    │     ├── robotwin.py         (LocalRoboTwinEnv + RoboTwinRLPrimitives)
+   │     ├── metaworld.py        (LocalMetaWorldEnv, MetaWorldRLPrimitives)
    │     ├── robocasa.py         (RoboCasaRLPrimitives)
    │     └── robodojo.py         (RoboDojoRLPrimitives)
    ├── robots/rl/conversation.py (EpisodeConversation, validation retries, history compaction)
@@ -52,6 +53,10 @@ Verify pool health:
 curl -s http://127.0.0.1:28561/health   # LIBERO
 curl -s http://127.0.0.1:28562/health   # RoboTwin
 ```
+
+### MetaWorld
+
+Install `requirements/rl-metaworld.txt` in an isolated Python 3.11 environment. Start a pool with `python -m robots.rl.server serve --env metaworld --workers 1 --gpus 0 --port 28565`. Open a session with an MT50 task name (for example `pick-place-v3`) and a native task index from 0 to 49 in `seed`. The fixed-wrist Sawyer accepts xyz and gripper opening targets, provides corner2 and gripperPOV images, and runs for up to 500 native steps.
 
 ## Standalone Evaluation / Data Collection
 
