@@ -22,7 +22,7 @@ import numpy as np
 from pydantic import Field
 
 from robots.rl import geometry
-from robots.rl.geometry import Coordinates
+from robots.rl.geometry import Coordinates, grasp_axes
 from robots.rl.perception import RecordedPerception
 from robots.rl.toolkit import Vector3
 from rpent.tools import ToolResult, tool
@@ -85,6 +85,13 @@ CAMERAS = ("corner2", "gripperPOV")
 SIZE = 1024
 SERVO_GAIN = 0.15
 TCP_TOLERANCE_M = 0.004
+MAX_MOTION_STEPS = 100
+STALL_STEPS = 15
+STALL_PROGRESS_M = 0.002
+MAX_GRIPPER_STEPS = 50
+OPENING_TOLERANCE = 0.05
+GRIPPER_SETTLE_STEPS = 3
+GRIPPER_SETTLE_OPENING = 0.01
 # Measured with an unloaded Sawyer gripper after 50 native steps at each end.
 CLOSED_GAP_M = 0.029667591142120822
 OPEN_GAP_M = 0.10034364850608656
@@ -162,6 +169,11 @@ class Scene:
             d.geom_xpos[i, 2] + abs(d.geom_xmat[i].reshape(3, 3)[2]) @ m.geom_size[i]
             for i in boxes
         )
+        hand = d.body("hand")
+        hand_rotation = hand.xmat.reshape(3, 3)
+        pads = self.pads()
+        jaw_in_hand = hand_rotation.T @ (pads[0] - pads[1])
+        approach_in_hand = hand_rotation.T @ (pads.mean(axis=0) - hand.xpos)
         return {
             "coordinate_calibration": {
                 "base_xyz": base.tolist(),
@@ -170,7 +182,9 @@ class Scene:
                 ).tolist(),
                 "table_top_xyz": [*table.xpos[:2], top],
                 "tcp": "finger_pad_midpoint",
-            }
+            },
+            "jaw_slide_axes_site": [jaw_in_hand.tolist()],
+            "wrist_to_site_in_site": approach_in_hand.tolist(),
         }
 
     def pads(self):
@@ -178,18 +192,24 @@ class Scene:
             [self.data.site(n).xpos for n in ("leftEndEffector", "rightEndEffector")]
         )
 
+    def _opening_raw(self):
+        pads = self.pads()
+        gap = float(np.linalg.norm(pads[0] - pads[1]))
+        return float(np.clip((gap - CLOSED_GAP_M) / (OPEN_GAP_M - CLOSED_GAP_M), 0, 1))
+
     def state(self):
         pads = self.pads()
-        gap = np.linalg.norm(pads[0] - pads[1])
-        steps = self.env.curr_path_length
+        gap = float(np.linalg.norm(pads[0] - pads[1]))
+        opening = float(
+            np.clip((gap - CLOSED_GAP_M) / (OPEN_GAP_M - CLOSED_GAP_M), 0, 1)
+        )
+        steps = int(self.env.curr_path_length)
         return {
             "tcp_world": pads.mean(axis=0).tolist(),
-            "opening": float(
-                np.clip((gap - CLOSED_GAP_M) / (OPEN_GAP_M - CLOSED_GAP_M), 0, 1)
-            ),
-            "model_env_steps": steps,
-            "native_total_steps": steps,
-            "init_settle_steps": 0,
+            "hand_rotation": self.data.body("hand").xmat.reshape(3, 3).copy().tolist(),
+            "opening": round(opening, 3),
+            "finger_gap_m": round(gap, 5),
+            "env_steps": steps,
             "terminated": self.success,
             "truncated": steps >= self.max_episode_steps and not self.success,
         }
@@ -199,52 +219,101 @@ class Scene:
             check_cancelled()
         if self.success or self.env.curr_path_length >= self.max_episode_steps:
             return False
-        _, _, terminated, _, info = self.env.step(
+        _, _, _, _, info = self.env.step(
             np.r_[np.clip(delta, -1, 1), self.grip_command]
         )
-        self.success |= bool(info["success"] or terminated)
+        self.success |= bool(info["success"])
         return True
 
     def move_to(self, target, check_cancelled=None):
         target = np.asarray(target, dtype=float)
         if target.shape != (3,) or not np.isfinite(target).all():
             raise ValueError("Expected a finite TCP position")
-        for _ in range(100):
+        errors: list[float] = []
+        reason: str | None = None
+        for steps in range(MAX_MOTION_STEPS + 1):
             delta = target - self.pads().mean(axis=0)
-            if np.linalg.norm(delta) <= TCP_TOLERANCE_M or not self.advance(
+            error = float(np.linalg.norm(delta))
+            errors.append(error)
+            if error <= TCP_TOLERANCE_M:
+                break
+            if self.success or self.env.curr_path_length >= self.max_episode_steps:
+                reason = "terminated" if self.success else "truncated"
+                break
+            if (
+                len(errors) > STALL_STEPS
+                and errors[-1 - STALL_STEPS] - error < STALL_PROGRESS_M
+            ):
+                reason = "stalled"
+                break
+            if steps >= MAX_MOTION_STEPS:
+                reason = "max_steps"
+                break
+            if not self.advance(
                 SERVO_GAIN * delta / self.env.action_scale, check_cancelled
             ):
+                reason = "terminated" if self.success else "truncated"
                 break
         error = float(np.linalg.norm(target - self.pads().mean(axis=0)))
-        return dict(
-            status="reached" if error <= TCP_TOLERANCE_M else "partial",
-            position_error_m=error,
-            **self.state(),
-        )
+        if error <= TCP_TOLERANCE_M:
+            reason = None
+        state = self.state()
+        return {
+            "status": "reached" if reason is None else "partial",
+            **({} if reason is None else {"reason": reason}),
+            "position_error_m": round(error, 4),
+            **state,
+        }
 
     def set_gripper(self, opening, check_cancelled=None):
         if not 0 <= opening <= 1:
             raise ValueError("Expected opening in [0,1]")
         hold_tcp = self.pads().mean(axis=0)
-        for _ in range(50):
-            diff = opening - self.state()["opening"]
+        previous = self._opening_raw()
+        still = 0
+        reason: str | None = None
+        for steps in range(MAX_GRIPPER_STEPS + 1):
+            current = self._opening_raw()
+            diff = float(opening - current)
+            if steps > 0:
+                still = (
+                    still + 1 if abs(current - previous) < GRIPPER_SETTLE_OPENING else 0
+                )
+            previous = current
             if opening in (0, 1):
                 self.grip_command = 1.0 - 2.0 * opening
             else:
                 self.grip_command = float(-np.clip(diff * 5.0, -1, 1))
-            if abs(diff) <= 0.05 or not self.advance(
+            if abs(diff) <= OPENING_TOLERANCE:
+                break
+            if self.success or self.env.curr_path_length >= self.max_episode_steps:
+                reason = "terminated" if self.success else "truncated"
+                break
+            if still >= GRIPPER_SETTLE_STEPS and diff < 0:
+                reason = "blocked"
+                break
+            if steps >= MAX_GRIPPER_STEPS:
+                reason = "max_steps"
+                break
+            if not self.advance(
                 SERVO_GAIN
                 * (hold_tcp - self.pads().mean(axis=0))
                 / self.env.action_scale,
                 check_cancelled,
             ):
+                reason = "terminated" if self.success else "truncated"
                 break
+        current = self._opening_raw()
+        diff = float(opening - current)
+        if abs(diff) <= OPENING_TOLERANCE:
+            reason = None
         state = self.state()
-        reached = abs(state["opening"] - opening) <= 0.05
-        return dict(
-            status="reached" if reached else "partial",
+        return {
+            "status": "reached" if reason is None else "partial",
+            **({} if reason is None else {"reason": reason}),
+            "opening_error": round(diff, 3),
             **state,
-        )
+        }
 
     def frame(self, camera):
         import mujoco
@@ -323,7 +392,11 @@ class MetaWorldRLPrimitives(RecordedPerception):
         self._init_perception(
             max_episode_steps=min(int(max_episode_steps), NATIVE_HORIZON), **kwargs
         )
-        self.coordinates = Coordinates.from_control(self.env.calibration())
+        control = self.env.calibration()
+        self.coordinates = Coordinates.from_control(control)
+        self.tool_rotation = grasp_axes(
+            control["jaw_slide_axes_site"][0], control["wrist_to_site_in_site"]
+        )
         self.identity = dict(self.env.identity)
         self._save_artifact("coordinates.json", self.coordinates.metadata(), None)
         self._save_artifact("initial_state.json", self.identity, None)
@@ -332,20 +405,23 @@ class MetaWorldRLPrimitives(RecordedPerception):
         return self._success
 
     def _update_state(self, state):
-        self.env_steps = state["model_env_steps"]
+        self.env_steps = int(state["env_steps"])
         self._success |= bool(state["terminated"])
 
     def robot_state(self):
         state = self.env.state()
         self._update_state(state)
-        tcp = self.coordinates.points(state.pop("tcp_world"))
+        tcp = self.coordinates.points(state["tcp_world"])
+        hand_rotation = np.asarray(state["hand_rotation"], dtype=np.float64)
+        orientation = self.coordinates.orientation(hand_rotation @ self.tool_rotation)
         return {
-            **state,
-            "env_steps": self.env_steps,
             "pose": {
                 "xyz": [round(float(v), 4) for v in tcp],
-                "orientation_rpy": [round(float(np.pi), 6), 0.0, 0.0],
+                "orientation_rpy": geometry.rpy_of(orientation),
             },
+            "opening": round(float(state["opening"]), 3),
+            "finger_gap_m": round(float(state["finger_gap_m"]), 5),
+            "env_steps": self.env_steps,
         }
 
     def capture(self, camera):
@@ -354,15 +430,25 @@ class MetaWorldRLPrimitives(RecordedPerception):
         return (
             rgb,
             geometry.world_from_depth(depth, frame),
-            {**frame, "raw_point_map_frame": "sim_world", "raw_point_map_unit": "m"},
+            {
+                **frame,
+                "raw_point_map_frame": "sim_world",
+                "raw_point_map_unit": "m",
+                "tool_rotation_to_native": self.tool_rotation.tolist(),
+            },
         )
 
     def _action_result(self, state, partial_reason):
         self._update_state(state)
-        state.pop("tcp_world")
+        data = {"status": state["status"], "env_steps": self.env_steps}
+        for key in ("position_error_m", "opening_error"):
+            if key in state:
+                data[key] = state[key]
         if state["status"] != "reached":
-            state["reason"] = self._ended_reason() if self.ended else partial_reason
-        return ToolResult(data=state)
+            data["reason"] = state.get("reason") or (
+                self._ended_reason() if self.ended else partial_reason
+            )
+        return ToolResult(data=data)
 
     @tool
     def move_to(self, xyz: Vector3) -> ToolResult:

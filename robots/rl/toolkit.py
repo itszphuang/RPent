@@ -234,7 +234,9 @@ class PositionMoveAction(BaseModel):
 
     model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
     action: Literal["move_to"]
-    xyz: Vector3
+    xyz: Vector3 = Field(
+        description="Absolute grasp TCP xyz in the selected world frame, metres."
+    )
 
 
 PositionAction = Annotated[
@@ -247,7 +249,11 @@ class PositionActionBatch(ActionBatch):
     def execute_actions(
         self, actions: Annotated[list[PositionAction], Field(min_length=1)]
     ) -> ToolResult:
-        """1..K ordered actions. Use move_to with xyz or set_gripper with opening from 0 to 1."""
+        """Execute 1..K move_to/set_gripper actions strictly in list order. The entire list is validated before any movement. Each item finishes and is measured before the next begins. Stop immediately on native success, truncation, error or partial; remaining items are not executed. Returns every executed result and pose, executed_count, zero-based stopped_at, stop_reason and final_state. Use view_env to see the scene after motion. Example: {"actions":[{"action":"move_to","xyz":[0.1,0,0.3]},{"action":"set_gripper","opening":0}]}.
+
+        Args:
+            actions: Ordered list, at most the configured K; each item is move_to with xyz only (fixed wrist orientation) or set_gripper with opening from 0 to 1. The list contains only physical actions.
+        """
         return self._execute_actions(actions)
 
 

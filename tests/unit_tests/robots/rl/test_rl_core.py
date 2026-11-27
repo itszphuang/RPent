@@ -105,6 +105,10 @@ def test_metaworld_tool_declarations():
         "gripperPOV",
         "all",
     ]
+    desc = tools["execute_actions"].description
+    assert "validated before any movement" in desc
+    assert "Stop immediately" in desc
+    assert "view_env" in desc
     action = {"action": "move_to", "xyz": [1, 2, 3]}
     tools["execute_actions"].validate_arguments({"actions": [action]})
     with pytest.raises(ValueError):

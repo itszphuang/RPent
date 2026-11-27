@@ -22,8 +22,14 @@ import pytest
 from fastapi.testclient import TestClient
 from PIL import Image
 
-from robots.rl.envs.metaworld import TASK_DESCRIPTIONS, LocalMetaWorldEnv
-from robots.rl.geometry import Coordinates
+from robots.rl import geometry
+from robots.rl.envs.metaworld import (
+    MAX_GRIPPER_STEPS,
+    MAX_MOTION_STEPS,
+    TASK_DESCRIPTIONS,
+    LocalMetaWorldEnv,
+)
+from robots.rl.geometry import Coordinates, grasp_axes
 from robots.rl.server import (
     BINARY_EXECUTE_MEDIA_TYPE,
     _WorkerSessionHost,
@@ -49,7 +55,7 @@ def scene(local_env):
     return local_env.scene
 
 
-def test_initial_state_and_frame(scene):
+def test_initial_state_and_frame(local_env, scene):
     replay = LocalMetaWorldEnv("pick-place-v3", 49)
     try:
         assert (
@@ -64,25 +70,50 @@ def test_initial_state_and_frame(scene):
     finally:
         replay.close()
     assert scene.env.curr_path_length == 0
-    c = Coordinates.from_control(scene.calibration())
+    cal = scene.calibration()
+    c = Coordinates.from_control(cal)
     point = np.array([0.12, 0.62, 0.15])
     np.testing.assert_allclose(c.points(point), [0.62, -0.12, 0.15])
     np.testing.assert_allclose(c.world_position(c.points(point)), point)
     assert c.table_height_m == pytest.approx(0.0, abs=1e-8)
+    tool_rot = grasp_axes(cal["jaw_slide_axes_site"][0], cal["wrist_to_site_in_site"])
+    hand_rot = np.asarray(scene.state()["hand_rotation"], dtype=np.float64)
+    expected_rpy = geometry.rpy_of(c.orientation(hand_rot @ tool_rot))
+    tk = RLToolkit(
+        runtime_kwargs={"env": local_env, "sam3_client": None},
+        environment="metaworld",
+        record_artifacts=False,
+    )
+    obs = tk.initial_observation().data["state"]
+    assert obs["pose"]["orientation_rpy"] == expected_rpy
+    assert obs["pose"]["orientation_rpy"] != [round(float(np.pi), 6), 0.0, 0.0]
+    assert obs["finger_gap_cm"] == pytest.approx(
+        scene.state()["finger_gap_m"] * 100.0, abs=1e-3
+    )
+    for forbidden in ("model_env_steps", "native_total_steps", "init_settle_steps"):
+        assert forbidden not in obs
 
 
 def test_empty_gripper_and_lift(scene):
     for opening in (0, 1):
         grip = scene.set_gripper(opening)
         assert grip["status"] == "reached" and abs(grip["opening"] - opening) <= 0.05
+        assert "opening_error" in grip and abs(grip["opening_error"]) <= 0.05
+        assert grip["opening"] == round(grip["opening"], 3)
         delta = np.array([0.005, 0, 0.012])
         target = scene.pads().mean(axis=0) + delta
         move = scene.move_to(target)
         assert move["status"] == "reached" and move["position_error_m"] < 0.005
+        assert move["position_error_m"] == round(move["position_error_m"], 4)
     obj = scene.data.body("obj").xpos.copy()
     assert scene.move_to(obj + [0, 0, 0.10])["status"] == "reached"
     assert scene.move_to(obj)["status"] == "reached"
-    scene.set_gripper(0)
+    before_grasp = scene.env.curr_path_length
+    grasp_res = scene.set_gripper(0)
+    grasp_steps = scene.env.curr_path_length - before_grasp
+    assert grasp_res["status"] == "partial" and grasp_res["reason"] == "blocked"
+    assert 0 < grasp_steps < MAX_GRIPPER_STEPS - 10
+    assert grasp_res["opening_error"] == round(grasp_res["opening_error"], 3)
     grasp = scene.data.body("obj").xpos.copy()
     start = scene.pads().mean(axis=0)
     move = scene.move_to(start + [0, 0, 0.10])
@@ -91,21 +122,32 @@ def test_empty_gripper_and_lift(scene):
     np.testing.assert_allclose(displacement, [0, 0, 0.10], atol=0.005)
 
 
-@pytest.mark.parametrize("success", [True, False])
-def test_last_native_step(scene, monkeypatch, success):
+def test_move_to_stall_early_stop(scene):
+    obj = scene.data.body("obj").xpos.copy()
+    before = scene.env.curr_path_length
+    res = scene.move_to(obj + [0, 0, -0.20])
+    used = scene.env.curr_path_length - before
+    assert res["status"] == "partial" and res["reason"] == "stalled"
+    assert 0 < used < MAX_MOTION_STEPS // 2
+
+
+@pytest.mark.parametrize(
+    ("success", "native_term"), [(True, False), (False, False), (False, True)]
+)
+def test_last_native_step(scene, monkeypatch, success, native_term):
     # Use the actual integrator and horizon; control only the verdict of step 500.
     original = scene.env.step
 
     def step(action):
-        obs, reward, term, trunc, info = original(action)
-        return obs, reward, term, trunc, {**info, "success": success}
+        obs, reward, _term, trunc, info = original(action)
+        return obs, reward, native_term, trunc, {**info, "success": success}
 
     monkeypatch.setattr(scene.env, "step", step)
     scene.env.curr_path_length = 499
     assert scene.advance(np.zeros(3))
     state = scene.state()
     assert state["terminated"] is success and state["truncated"] is (not success)
-    assert state["native_total_steps"] == 500
+    assert state["env_steps"] == 500
     assert not scene.advance(np.zeros(3))
 
 
@@ -130,6 +172,11 @@ def test_batch_stops_mid_second_item_at_500(local_env):
     )
     assert res.data["executed_count"] == 2 and res.data["stopped_at"] == 1
     assert res.data["stop_reason"] == "truncated"
+    assert "opening_error" in res.data["results"][0]
+    assert "finger_gap_cm" in res.data["final_state"]
+    for forbidden in ("model_env_steps", "native_total_steps", "init_settle_steps"):
+        assert forbidden not in res.data["results"][0]
+        assert forbidden not in res.data["final_state"]
     assert scene.env.curr_path_length == 500 and scene.grip_command == -1.0
 
 
@@ -139,13 +186,13 @@ def test_custom_horizon_and_cancellation(local_env):
 
     with pytest.raises(InterruptedError):
         local_env.set_gripper(0, check_cancelled=cancel)
-    assert local_env.state()["model_env_steps"] == 0
+    assert local_env.state()["env_steps"] == 0
     assert local_env.scene.renderer is None
 
     short = LocalMetaWorldEnv("pick-place-v3", 49, max_episode_steps=10)
     try:
         state = short.set_gripper(0)
-        assert state["model_env_steps"] == 10 and state["truncated"]
+        assert state["env_steps"] == 10 and state["truncated"]
         assert short.scene.renderer is None
     finally:
         short.close()
@@ -172,7 +219,9 @@ class FakeScene:
                 "base_xyz": [0, 0, 0],
                 "base_rotation": [[0, -1, 0], [1, 0, 0], [0, 0, 1]],
                 "table_top_xyz": [0, 0, 0],
-            }
+            },
+            "jaw_slide_axes_site": [[0.0, 1.0, 0.0]],
+            "wrist_to_site_in_site": [1.0, 0.0, 0.0],
         }
 
     def get_task_language(self):
@@ -180,9 +229,11 @@ class FakeScene:
 
     def state(self):
         return {
-            "model_env_steps": self.steps,
+            "env_steps": self.steps,
             "tcp_world": [0.1, 0.2, 0.3],
+            "hand_rotation": [[0.0, 0.0, 1.0], [0.0, 1.0, 0.0], [-1.0, 0.0, 0.0]],
             "opening": 1.0,
+            "finger_gap_m": 0.1,
             "terminated": self.steps == 500 and self.success,
             "truncated": self.steps == 500,
         }
