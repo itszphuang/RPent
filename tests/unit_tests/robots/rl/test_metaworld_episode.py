@@ -84,12 +84,15 @@ def test_initial_state_and_frame(local_env, scene):
         environment="metaworld",
         record_artifacts=False,
     )
-    obs = tk.initial_observation().data["state"]
+    obs_result = tk.initial_observation()
+    obs = obs_result.data["state"]
     assert obs["pose"]["orientation_rpy"] == expected_rpy
     assert obs["pose"]["orientation_rpy"] != [round(float(np.pi), 6), 0.0, 0.0]
     assert obs["finger_gap_cm"] == pytest.approx(
         scene.state()["finger_gap_m"] * 100.0, abs=1e-3
     )
+    obs_text = json.dumps(obs_result.data, ensure_ascii=False)
+    assert "000000" not in obs_text and "999999" not in obs_text
     for forbidden in ("model_env_steps", "native_total_steps", "init_settle_steps"):
         assert forbidden not in obs
 
@@ -174,6 +177,8 @@ def test_batch_stops_mid_second_item_at_500(local_env):
     assert res.data["stop_reason"] == "truncated"
     assert "opening_error" in res.data["results"][0]
     assert "finger_gap_cm" in res.data["final_state"]
+    res_text = json.dumps(res.data, ensure_ascii=False)
+    assert "000000" not in res_text and "999999" not in res_text
     for forbidden in ("model_env_steps", "native_total_steps", "init_settle_steps"):
         assert forbidden not in res.data["results"][0]
         assert forbidden not in res.data["final_state"]

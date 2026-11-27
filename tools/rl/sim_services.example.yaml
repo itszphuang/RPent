@@ -49,5 +49,9 @@ simulators:
   # metaworld:
   #   python: /path/to/envs/metaworld/bin/python
   #   port: 28565
-  #   gpus: [4]
-  #   workers: 1
+  #   gpus: [4, 5, 6, 7]
+  #   workers: 16
+  #   max_episodes_per_worker: 30
+  #   env:
+  #     MUJOCO_GL: egl
+  #     PYOPENGL_PLATFORM: egl

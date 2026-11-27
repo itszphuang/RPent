@@ -55,6 +55,17 @@ def test_centimeters_roundtrip():
     out = cm.payload({"xyz": [0.1234, -0.5678, 0.9012], "step": 1}, to_model=True)
     assert out["xyz"] == pytest.approx([12.34, -56.78, 90.12])
     assert out["step"] == 1
+    exact = cm.payload(
+        {
+            "xyz": [0.6014, -0.0044, 0.1501],
+            "position_error_m": 0.0034,
+            "finger_gap_m": 0.10034,
+        },
+        to_model=True,
+    )
+    assert exact["xyz"] == [60.14, -0.44, 15.01]
+    assert exact["position_error_cm"] == 0.34
+    assert exact["finger_gap_cm"] == 10.034
     with pytest.raises(ValueError):
         validate_relations("back_project", {"box": [50, 10, 20, 40]})
 

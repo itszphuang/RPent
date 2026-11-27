@@ -56,30 +56,30 @@ curl -s http://127.0.0.1:28562/health   # RoboTwin
 
 ### MetaWorld
 
-Install `requirements/rl-metaworld.txt` in an isolated Python 3.11 environment and enable headless EGL rendering (`MUJOCO_GL=egl`, `PYOPENGL_PLATFORM=egl`):
+Install `requirements/rl-metaworld.txt` in an isolated Python 3.11 environment and enable headless EGL rendering (`MUJOCO_GL=egl`, `PYOPENGL_PLATFORM=egl`). Size `--workers` to at least your per-domain `sampling_episodes` quota (e.g., `--workers 16` for the 8-GPU GRPO config's `sampling_episodes: 16`, or use the commented `metaworld` entry in `tools/rl/sim_services.example.yaml`):
 
 ```bash
 MUJOCO_GL=egl PYOPENGL_PLATFORM=egl \
   python -m robots.rl.server serve \
   --env metaworld \
-  --workers 4 \
-  --gpus 0 \
+  --workers 16 \
+  --gpus 4 5 6 7 \
   --port 28565 \
-  --sam3-endpoint http://127.0.0.1:28560
+  --sam3-endpoint http://127.0.0.1:28510
 ```
 
 Multi-node deployments can also front remote MetaWorld pools with `python -m robots.rl.server router --env metaworld --port 28565 --backends ...`. Open a session with an MT50 task name (for example `pick-place-v3`) and a native task index from `0` to `49` in `seed`. The fixed-wrist Sawyer enforces a strict 4-DoF `move_to` schema (`xyz`-only, rejecting `orientation_rpy`) plus `set_gripper`, reports calibrated live `pose.orientation_rpy`, provides `corner2` and `gripperPOV` views, and clamps `max_episode_steps` to MetaWorld's native 500-step horizon.
 
-Standalone rollout example:
+Standalone rollout example (using the task pool generated under `${RPENT_ROOT}/data/metaworld`):
 
 ```bash
 python -m robots.rl.rollout \
   --model-url http://127.0.0.1:30000/v1 \
   --model-name Qwen3.5-4B \
   --sim-url http://127.0.0.1:28565 \
-  --tasks-jsonl /path/to/metaworld/mt50.jsonl \
+  --tasks-jsonl "${RPENT_ROOT:-/path/to/rpent_ppo}/data/metaworld/mt50.jsonl" \
   --output-dir /path/to/metaworld_eval_out \
-  --concurrency 4 \
+  --concurrency 16 \
   --max-turns 50 \
   --record-artifacts
 ```

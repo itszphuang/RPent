@@ -20,6 +20,7 @@ import math
 import re
 from copy import deepcopy
 from dataclasses import replace
+from decimal import Decimal
 from typing import Any
 
 from pydantic import ConfigDict, create_model
@@ -41,6 +42,9 @@ _LINEAR_BOUNDS = frozenset(
 )
 
 
+_SCALE_FACTOR = Decimal(100)
+
+
 def _scale(value: Any, to_model: bool) -> Any:
     if value is None:
         return None
@@ -52,7 +56,11 @@ def _scale(value: Any, to_model: bool) -> Any:
         or not math.isfinite(value)
     ):
         raise ValueError("A linear quantity must contain finite numbers")
-    return value * 100.0 if to_model else value / 100.0
+    decimal_value = Decimal(str(float(value)))
+    scaled = (
+        decimal_value * _SCALE_FACTOR if to_model else decimal_value / _SCALE_FACTOR
+    )
+    return 0.0 if scaled == 0 else float(scaled)
 
 
 class Centimeters:
@@ -124,7 +132,7 @@ class Centimeters:
                 elif key == "description":
                     result[key] = self.description(value)
                 elif linear and key in _LINEAR_BOUNDS:
-                    result[key] = value * self.factor
+                    result[key] = _scale(value, True)
                 else:
                     result[key] = walk(value, linear)
             return result
